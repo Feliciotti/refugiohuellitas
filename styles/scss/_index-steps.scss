@@ -1,0 +1,79 @@
+/* ------------- INDEX STEPS ------------- */
+
+.steps {
+    grid-area: section1;
+    background-color: $brown;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    height: auto;
+
+    .step {
+        @include center;
+        align-items: center;
+
+        .step__img {
+            height: auto;
+            width: 50%;
+
+            &:hover{
+                transition: 1s;
+                transform: rotateX(360deg);
+            }
+            
+        }
+
+    }
+
+}
+
+
+/* ------------- MEDIA QUERIES  (INDEX - STEPS) ------------- */
+
+@media only screen and (max-width: 540px) {
+
+    .steps {
+        grid-area: section1-mini;
+        background-color: $pink;
+        @include center;
+        flex-direction: column;
+
+        .step {
+            margin: 0 auto;
+
+            &:nth-child(-n+2) {
+                margin-bottom: 40px;
+                }
+
+            .step__img {
+                width: 50%;
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .steps {
+        grid-area: section1-tablet;
+        background-color: $pink;
+        @include center;
+        flex-direction: column;
+
+        .step {
+            margin: 0 40px;
+
+            &:nth-child(-n+2) {
+                margin-bottom: 40px;
+                }
+
+            .step__img {
+                width: 40%;
+            }
+        }
+
+    }
+}

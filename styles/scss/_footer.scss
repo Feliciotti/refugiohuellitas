@@ -1,0 +1,45 @@
+/* ------------- FOOTER ------------- */
+footer {
+    grid-area: footer;
+    background-color: $brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: auto;
+
+    .footer__text {
+        font-family: $title;
+        color: $light-pink;
+        word-spacing: 5px;
+        font-size: 30px;
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    footer {
+        grid-area: footer-mini;
+
+        .footer__text {
+            font-size: 20px;
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+
+    footer {
+        grid-area: footer-mini;
+
+        .footer__text {
+            font-size: 40px;
+        }
+
+    }
+
+}

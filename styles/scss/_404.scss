@@ -1,0 +1,75 @@
+.error404 {
+    background-color: $light-pink;
+    
+    .error404__section {
+        @include center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        position: relative;
+        animation-name: aparecer;
+        animation-duration: 1s;
+
+        .error404__titles {
+
+            .error404--title {
+                font-size: 100px;
+            }
+
+            .error404--title2 {
+                font-size: 40px;
+            }
+
+        }
+
+        .error404__imgContainer {
+            position: relative;
+            height: 400px;
+
+            .error404__img {
+                height: 400px;
+            }
+        
+            .error404__btnContainer {
+                position: absolute;
+                bottom: -5%;
+                right: 30%;
+
+                .error404__btnContent {
+                    @include center;
+                    align-items: center;
+                    flex-direction: column;
+                    position: relative;
+
+                    .error404--lana {
+
+                        &:hover {
+                            transition: 3s;
+                            transform: rotateZ(360deg);
+                        }
+                    }
+
+                    .btn--error {
+                        font-size: 40px;
+                        position: absolute;
+                        color: $light-pink;
+
+                        &:hover {
+                            color: $red;
+                        }
+                    }
+        
+                }
+        
+            }
+
+        }
+
+    }
+
+    .error404--shadow {
+        width: 30%;
+    } 
+
+
+}

@@ -1,0 +1,67 @@
+/* ------------- CONTACTO - FORMULARIO ------------- */
+
+#contactoSection {
+    grid-area: section1;
+    @include center;
+
+    form {
+        background-color: white;
+        border: 10px groove #dd2451;
+        color: $brown;
+        text-align: center;    
+        width: auto;
+        height: auto;
+        padding: 50px 60px;
+        margin-bottom: 50px;
+
+        .form__container {
+            padding-bottom: 50px;
+
+            .formTitle {
+                font-family: $title;
+                color: $brown;
+                font-size: 200%;
+                font-weight: bold;
+                padding-bottom: 5px;
+            }
+        }
+
+        .form__btncontainer{
+            @include center;
+
+            .btn--form {
+                @include btn;
+                font-family: $title;
+                font-size: 30px;
+
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+
+        }
+    }
+}
+
+
+.personData {
+    display: inline-block;
+    font-family: $title;
+    color: $brown;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+
+.reason {
+    font-family: $text;
+    color: $brown;
+    font-size: 180%;
+    padding-top: 5px;
+}
+
+textarea {
+    border: groove 5px $red;
+    width: 50%;
+    height: 50%;
+}
