@@ -12,7 +12,7 @@
                         "section2"
                         "footer";
     grid-template-columns: auto;
-    grid-template-rows: 100px auto auto auto 50px;
+    grid-template-rows: 100px auto auto auto auto;
     grid-row-gap: 20px;
     justify-items: center;
     align-items: center;
@@ -34,7 +34,7 @@
                             "section2"
                             "footer";
         grid-template-columns: auto;
-        grid-template-rows: 70px 100vh auto auto 30px;
+        grid-template-rows: 70px 100vh auto auto auto;
     }
 
     .container_local {
@@ -69,7 +69,7 @@
                             "section2"
                             "footer";
         grid-template-columns: auto;
-        grid-template-rows: 100px 100vh auto auto 30px;
+        grid-template-rows: 100px 100vh auto auto auto;
     }
 
     .container_local {

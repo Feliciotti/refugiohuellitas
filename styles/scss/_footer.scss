@@ -2,42 +2,99 @@
 footer {
     grid-area: footer;
     background-color: $brown;
-    display: flex;
-    justify-content: space-between;
+    color: $light-pink;
+    font-family: $title;
+    font-size: 25px;
     align-items: center;
-    padding: 0 50px;
     height: auto;
+    margin-top: 40px;
 
-    .footer__text {
-        font-family: $title;
-        color: $light-pink;
-        word-spacing: 5px;
-        font-size: 30px;
-        margin: 0;
-    }
+    .footer__ulContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 30px;
 
-}
+        .footer__list{
+            list-style: none;
+        }
 
-@media only screen and (max-width: 540px) {
+        .socialMedia {
+            display: flex;
+            
+            li {
 
-    footer {
-        grid-area: footer-mini;
+                .footer__icon{
+                    color: $light-pink;
 
-        .footer__text {
-            font-size: 20px;
+                    i {
+                        font-size: 35px;
+                        
+                        &:nth-child(-n+2) {
+                            margin-left: 30px;
+                            }
+    
+                    }
+
+                }
+
+
+            }
+
         }
 
     }
 
+    .footer__text {
+        font-family: $title;
+        color: $light-pink;
+        background-color: #d67b60;
+        word-spacing: 5px;
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+        padding: 5px 0;
+    }
+
 }
 
-@media only screen and (min-width: 576px) and (max-width: 768px) {
+// MEDIA QUERIES -------------------------
+
+@media only screen and (min-width: 361px) and (max-width: 578px) {
 
     footer {
-        grid-area: footer-mini;
 
-        .footer__text {
-            font-size: 40px;
+        .footer__ulContainer {
+            @include center;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+
+            .footer__list{
+                padding: 0;
+            }
+
+            .socialMedia {
+                
+                li {
+
+                    .footer__icon{
+
+                        i {
+                            font-size: 35px;
+                            
+                            &:nth-child(-n+2) {
+                                margin-left: 10px;
+                                }
+        
+                        }
+
+                    }
+
+
+                }
+
+            }
+
         }
 
     }
