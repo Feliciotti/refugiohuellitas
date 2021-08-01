@@ -1,0 +1,63 @@
+/* ------------- HEADER ------------- */
+header {
+    grid-area: header;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+
+    .logo {
+        height: 100px;
+    }
+
+    nav {
+        height: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .nav__list {
+
+            ul {
+                list-style: none;
+                font-family: $title;
+                font-size: 30px;
+                display: flex;
+                margin: auto 0;
+            }
+
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 540px) {
+
+    header {
+        .logo {
+            height: 70px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 550px) and (max-width: 719px) {
+
+    header {
+        .logo {
+            height: 70px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1000px) {
+
+    header {
+        .logo {
+            height: 80px;
+        }
+    }
+
+}
