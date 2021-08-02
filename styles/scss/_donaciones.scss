@@ -20,12 +20,49 @@
                 margin-top: 70px;
             }
             
+            div {
+                h3 {
+                    word-spacing: 3px;
+                }
+            }
         }
 
     }
 
     .pagosLogo {
         width: 200px;
+    }
+
+}
+
+// MEDIA QUERIES -------------------------
+
+@media only screen and (max-width: 768px) {
+
+    .donacionesSection {
+    
+        .donaciones__article {
+            display: flex;
+            flex-direction: column;
+    
+            .donaciones__paymethod {
+                @include center;
+                align-items: center;
+                flex-direction: column;
+                padding: 0 10px;
+    
+                &:nth-child(n+3) {
+                    margin-top: 70px;
+                }
+                
+            }
+    
+        }
+    
+        .pagosLogo {
+            width: 200px;
+        }
+    
     }
 
 }

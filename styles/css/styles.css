@@ -567,8 +567,25 @@ header {
       margin-top: 40px; }
       .donacionesSection .donaciones__article .donaciones__paymethod:nth-child(n+3) {
         margin-top: 70px; }
+      .donacionesSection .donaciones__article .donaciones__paymethod div h3 {
+        word-spacing: 3px; }
   .donacionesSection .pagosLogo {
     width: 200px; }
+
+@media only screen and (max-width: 768px) {
+  .donacionesSection .donaciones__article {
+    display: flex;
+    flex-direction: column; }
+    .donacionesSection .donaciones__article .donaciones__paymethod {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 10px; }
+      .donacionesSection .donaciones__article .donaciones__paymethod:nth-child(n+3) {
+        margin-top: 70px; }
+  .donacionesSection .pagosLogo {
+    width: 200px; } }
 
 /* ------------- CONTACTO - FORMULARIO ------------- */
 #contactoSection {
