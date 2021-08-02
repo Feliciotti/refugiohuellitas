@@ -32,6 +32,9 @@ footer {
                         &:nth-child(-n+2) {
                             margin-left: 30px;
                             }
+                        &:hover {
+                            color: #d67b60;
+                        }
     
                     }
 
@@ -71,6 +74,7 @@ footer {
 
             .footer__list{
                 padding: 0;
+                text-align: center;
             }
 
             .socialMedia {

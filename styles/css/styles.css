@@ -641,6 +641,8 @@ footer {
           font-size: 35px; }
           footer .footer__ulContainer .socialMedia li .footer__icon i:nth-child(-n+2) {
             margin-left: 30px; }
+          footer .footer__ulContainer .socialMedia li .footer__icon i:hover {
+            color: #d67b60; }
   footer .footer__text {
     font-family: "Zen Loop", cursive;
     color: #fff4ee;
@@ -659,7 +661,8 @@ footer {
     align-items: center;
     padding: 10px 0; }
     footer .footer__ulContainer .footer__list {
-      padding: 0; }
+      padding: 0;
+      text-align: center; }
     footer .footer__ulContainer .socialMedia li .footer__icon i {
       font-size: 35px; }
       footer .footer__ulContainer .socialMedia li .footer__icon i:nth-child(-n+2) {
