@@ -1,6 +1,7 @@
 /* ------------- INDEX RESCUES ------------- */
 .rescues {
     grid-area: section2;
+    margin-top: 40px;
 
     .rescues--title {
         font-weight: bolder;
@@ -80,11 +81,11 @@
         
     
             .rescues__article {
-                width: 250px;
+                width: 240px;
                 height: auto;
             
                 .rescues__img {
-                    width: 250px;
+                    width: 240px;
                 }
             }
 
@@ -124,7 +125,7 @@
 
 }
 
-@media only screen and (min-width: 576px) and (max-width: 768px) {
+@media only screen and (min-width: 541px) and (max-width: 768px) {
 
     .rescues {
 
@@ -135,15 +136,15 @@
         .rescues__article-container {
             display: grid;
             justify-items: center;
-            grid-template-columns: 500px;
+            grid-template-columns: 450px;
             row-gap: 40px;
         
     
             .rescues__article {
-                width: 500px;
+                width: 450px;
 
                 .rescues__img {
-                    width: 500px;
+                    width: 450px;
                 }
 
                 .rescues--article-title {

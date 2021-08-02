@@ -9,25 +9,16 @@
         position: absolute;
         align-self: center;
 
-        h1 {
-            font-weight: bold;
-        }
-
         .main--title {
             position: absolute;
             top: -50px;
         }
 
         .main__img {
-            width: 80%;
+            width: 60%;
             height: auto;
             animation-name: aparecer;
             animation-duration: 2s;
-        }
-
-        .gato--negro {
-            height: auto;
-            max-width: 50%;
         }
     }
 
@@ -41,16 +32,12 @@
     .mainWrap {
 
         .main__container {
+            flex-direction: column;
+            align-items: center;
 
             .main__img {
-                width: 100%;
+                width: 90%;
                 height: auto;
-                margin: auto 0;
-            }
-
-            .gato--negro {
-                height: auto;
-                max-width: 50%;
             }
         }
 
@@ -63,6 +50,8 @@
     .mainWrap {
 
         .main__container {
+            flex-direction: column;
+            align-items: center;
 
             .main--title {
                 position: absolute;
@@ -70,13 +59,8 @@
             }
 
             .main__img {
-                width: 100%;
+                width: 90%;
                 height: auto;
-            }
-
-            .gato--negro {
-                height: auto;
-                max-width: 50%;
             }
         }
 
@@ -84,13 +68,13 @@
 
 }
 
-@media only screen and (min-width: 576px) and (max-width: 768px) {
+@media only screen and (min-width: 541px) and (max-width: 768px) {
 
     .mainWrap {
 
         .main__img {
             height: auto;
-            width: 80%;
+            width: 60%;
         }
 
     }
