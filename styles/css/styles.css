@@ -134,23 +134,81 @@ p {
 header {
   grid-area: header;
   height: auto;
+  position: fixed;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 5px 30px; }
+  align-items: center;
+  width: 100vw;
+  padding: 5px 30px;
+  z-index: 1; }
   header .logo {
     height: 100px; }
   header nav {
-    height: 100px;
     display: flex;
-    justify-content: space-evenly;
     align-items: center; }
-    header nav .nav__list ul {
-      list-style: none;
+    header nav .menu-btn {
+      display: none; }
+    header nav .menu-icon {
+      position: relative;
+      cursor: pointer;
+      z-index: 1;
+      padding: 20px 10px;
+      display: none; }
+      header nav .menu-icon__line {
+        display: block;
+        position: relative;
+        background: #827161;
+        height: 2px;
+        width: 25px;
+        border-radius: 4px; }
+        header nav .menu-icon__line::before, header nav .menu-icon__line::after {
+          content: '';
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          border-radius: 4px;
+          background: #827161; }
+        header nav .menu-icon__line::before {
+          transform: translateY(-5px); }
+        header nav .menu-icon__line::after {
+          transform: translateY(5px); }
+    header nav .nav-links {
+      display: flex;
+      list-style: none; }
+      header nav .nav-links .nav__link a {
+        font-family: "Zen Loop", cursive;
+        font-size: 30px;
+        margin: auto 0;
+        line-height: 70px; }
+        header nav .nav-links .nav__link a:nth-child(-n+4) {
+          margin-right: 2rem; }
+
+@media only screen and (max-width: 710px) {
+  header nav .menu-btn:checked ~ .nav-links {
+    opacity: 1;
+    clip-path: circle(100% at center); }
+  header nav .menu-icon {
+    display: block; }
+  header nav .nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: #fff4ee;
+    transition: opacity .8s .3s, clip-path 1s .2s;
+    clip-path: circle(200px at top right); }
+    header nav .nav-links .nav__link a {
       font-family: "Zen Loop", cursive;
       font-size: 30px;
-      display: flex;
-      margin: auto 0; }
+      margin: auto 0;
+      line-height: 70px; }
+      header nav .nav-links .nav__link a:nth-child(-n+4) {
+        margin-right: 2rem; } }
 
 @media only screen and (max-width: 540px) {
   header .logo {
