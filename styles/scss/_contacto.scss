@@ -5,24 +5,89 @@
     @include center;
 
     form {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.445);
         border: 10px groove #dd2451;
         color: $brown;
         text-align: center;    
         width: auto;
         height: auto;
         padding: 50px 60px;
-        margin-bottom: 50px;
 
         .form__container {
             padding-bottom: 50px;
+
+            div{
+                &:nth-child(-n+4) {
+                    margin-bottom: 40px;
+                }
+
+                .personData {
+                    display: inline-block;
+                    font-family: $title;
+                    color: $brown;
+                    font-size: 200%;
+                    font-weight: bold;
+                }
+
+                input {
+                    border: none;
+                    border-bottom: 2px solid $brown;
+                    width: 200px;
+                    background: none;
+                    margin-left: 20px;
+                    outline: 0;
+                }
+
+                select {
+                    appearance: none;
+                    outline: 0;
+                    border: 0;
+                    background: $pink;
+
+                    &::-ms-expand{
+                        display: none;
+                    }
+                }
+
+                .select {
+                    position: relative;
+                    margin-left: 20px;
+                    padding: 5px 15px;
+                    width: 210px;
+                    overflow: hidden;
+    
+                    border-radius: 5px;
+    
+                    color: $brown;
+                    font-family: $title;
+                    font-size: 25px;
+                    font-weight: bold;
+    
+                    cursor: pointer;
+                }
+            }
 
             .formTitle {
                 font-family: $title;
                 color: $brown;
                 font-size: 200%;
                 font-weight: bold;
-                padding-bottom: 5px;
+                margin: 0;
+            }
+
+            .reason {
+                font-size: 25px;
+                font-family: $text;
+                color: $brown;
+                padding-top: 5px;
+            }
+
+            textarea {
+                border: groove 5px $red;
+                width: 250px;
+                height: 50%;
+                padding: 10px;
+                outline: 0;
             }
         }
 
@@ -32,6 +97,7 @@
             .btn--form {
                 @include btn;
                 font-family: $title;
+                color: $brown;
                 font-size: 30px;
 
                 &:first-child {
@@ -43,25 +109,114 @@
     }
 }
 
+// MEDIA QUERIES -------------------------
 
-.personData {
-    display: inline-block;
-    font-family: $title;
-    color: $brown;
-    font-size: 200%;
-    font-weight: bold;
+@media only screen and (max-width: 359px) {
+    #contactoSection {
+        form {
+            padding: 5px 5px;
+            border: 5px groove $red;
+            margin: 0 5px;
+
+            .form__container {
+                padding-bottom: 20px;
+                
+                select {
+                    display: flex;
+                }
+    
+                textarea {
+                    border: groove 2px $red;
+                    width: 250px;
+                    height: 50%;
+                    padding: 10px;
+                    outline: 0;
+                }
+            }
+
+            .form__btncontainer {
+                margin-bottom: 20px;
+
+                .btn--form {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+
+        }
+    }
 }
 
+@media only screen and (min-width: 360px) and (max-width: 540px) {
 
-.reason {
-    font-family: $text;
-    color: $brown;
-    font-size: 180%;
-    padding-top: 5px;
+    #contactoSection {
+        form {
+            padding: 15px 15px;
+            border: 5px groove $red;
+            margin: 0 5px;
+
+            .form__container {
+                padding-bottom: 20px;
+
+
+                .form__select {
+                    @include center;
+            
+                    select {
+                        align-self: center;
+                    }
+                }
+    
+                textarea {
+                    border: groove 4px $red;
+                    width: 250px;
+                    height: 50%;
+                    padding: 10px;
+                    outline: 0;
+                }
+            }
+
+            .form__btncontainer {
+                margin-bottom: 20px;
+
+                .btn--form {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+
+        }
+    }
+
 }
 
-textarea {
-    border: groove 5px $red;
-    width: 50%;
-    height: 50%;
+@media only screen and (min-width: 541px) and (max-width: 768px) {
+
+    #contactoSection {
+        form {
+            padding: 30px 40px;
+            margin: 0 5px;
+
+            .form__container {
+    
+                textarea {
+                    width: 250px;
+                    height: 50%;
+                    padding: 10px;
+                    outline: 0;
+                }
+            }
+
+            .form__btncontainer {
+                margin-bottom: 20px;
+
+                .btn--form {
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            }
+
+        }
+    }
+
 }

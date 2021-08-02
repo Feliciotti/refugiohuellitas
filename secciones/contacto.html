@@ -76,12 +76,12 @@
                         <input type="email" name="email" required>
                     </div>
                     <div>
-                        <label class="personData" for="number">Teléfono de Contacto</label>
+                        <label class="personData" for="number">Teléfono</label>
                         <input type="tel" placeholder="011+" name="number" required>
                     </div>
-                    <div>
+                    <div class="form__select">
                         <label class="personData" for="localidad">Localidad</label>
-                        <select name="localidad" required>
+                        <select class="select" name="localidad" required>
                             <option value="TMP">Temperley</option>
                             <option value="LDZ">Lomas de Zamora</option>
                             <option value="LNS">Lanús</option>
@@ -108,7 +108,7 @@
                 <!--MENSAJE-->
                 <div class="form__container">
                     <p class="formTitle">Mensaje</p>
-                    <textarea name="comentarios" cols="30" rows="10" placeholder="Comentarios" maxlength="300"></textarea>
+                    <textarea name="comentarios" cols="50" rows="10" placeholder="Comentarios" maxlength="300"></textarea>
                 </div>
 
                 <div class="form__btncontainer">

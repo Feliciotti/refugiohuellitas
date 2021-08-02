@@ -593,22 +593,66 @@ header {
   display: flex;
   justify-content: center; }
   #contactoSection form {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.445);
     border: 10px groove #dd2451;
     color: #827161;
     text-align: center;
     width: auto;
     height: auto;
-    padding: 50px 60px;
-    margin-bottom: 50px; }
+    padding: 50px 60px; }
     #contactoSection form .form__container {
       padding-bottom: 50px; }
+      #contactoSection form .form__container div:nth-child(-n+4) {
+        margin-bottom: 40px; }
+      #contactoSection form .form__container div .personData {
+        display: inline-block;
+        font-family: "Zen Loop", cursive;
+        color: #827161;
+        font-size: 200%;
+        font-weight: bold; }
+      #contactoSection form .form__container div input {
+        border: none;
+        border-bottom: 2px solid #827161;
+        width: 200px;
+        background: none;
+        margin-left: 20px;
+        outline: 0; }
+      #contactoSection form .form__container div select {
+        appearance: none;
+        outline: 0;
+        border: 0;
+        background: #ffeadd; }
+        #contactoSection form .form__container div select::-ms-expand {
+          display: none; }
+      #contactoSection form .form__container div .select {
+        position: relative;
+        margin-left: 20px;
+        padding: 5px 15px;
+        width: 210px;
+        overflow: hidden;
+        border-radius: 5px;
+        color: #827161;
+        font-family: "Zen Loop", cursive;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer; }
       #contactoSection form .form__container .formTitle {
         font-family: "Zen Loop", cursive;
         color: #827161;
         font-size: 200%;
         font-weight: bold;
-        padding-bottom: 5px; }
+        margin: 0; }
+      #contactoSection form .form__container .reason {
+        font-size: 25px;
+        font-family: "Roboto", sans-serif;
+        color: #827161;
+        padding-top: 5px; }
+      #contactoSection form .form__container textarea {
+        border: groove 5px #dd2451;
+        width: 250px;
+        height: 50%;
+        padding: 10px;
+        outline: 0; }
     #contactoSection form .form__btncontainer {
       display: flex;
       justify-content: center; }
@@ -624,29 +668,72 @@ header {
         justify-content: center;
         align-items: center;
         font-family: "Zen Loop", cursive;
+        color: #827161;
         font-size: 30px; }
         #contactoSection form .form__btncontainer .btn--form:hover {
           color: #dd2451; }
         #contactoSection form .form__btncontainer .btn--form:first-child {
           margin-right: 20px; }
 
-.personData {
-  display: inline-block;
-  font-family: "Zen Loop", cursive;
-  color: #827161;
-  font-size: 200%;
-  font-weight: bold; }
+@media only screen and (max-width: 359px) {
+  #contactoSection form {
+    padding: 5px 5px;
+    border: 5px groove #dd2451;
+    margin: 0 5px; }
+    #contactoSection form .form__container {
+      padding-bottom: 20px; }
+      #contactoSection form .form__container select {
+        display: flex; }
+      #contactoSection form .form__container textarea {
+        border: groove 2px #dd2451;
+        width: 250px;
+        height: 50%;
+        padding: 10px;
+        outline: 0; }
+    #contactoSection form .form__btncontainer {
+      margin-bottom: 20px; }
+      #contactoSection form .form__btncontainer .btn--form {
+        font-size: 20px;
+        font-weight: bold; } }
 
-.reason {
-  font-family: "Roboto", sans-serif;
-  color: #827161;
-  font-size: 180%;
-  padding-top: 5px; }
+@media only screen and (min-width: 360px) and (max-width: 540px) {
+  #contactoSection form {
+    padding: 15px 15px;
+    border: 5px groove #dd2451;
+    margin: 0 5px; }
+    #contactoSection form .form__container {
+      padding-bottom: 20px; }
+      #contactoSection form .form__container .form__select {
+        display: flex;
+        justify-content: center; }
+        #contactoSection form .form__container .form__select select {
+          align-self: center; }
+      #contactoSection form .form__container textarea {
+        border: groove 4px #dd2451;
+        width: 250px;
+        height: 50%;
+        padding: 10px;
+        outline: 0; }
+    #contactoSection form .form__btncontainer {
+      margin-bottom: 20px; }
+      #contactoSection form .form__btncontainer .btn--form {
+        font-size: 20px;
+        font-weight: bold; } }
 
-textarea {
-  border: groove 5px #dd2451;
-  width: 50%;
-  height: 50%; }
+@media only screen and (min-width: 541px) and (max-width: 768px) {
+  #contactoSection form {
+    padding: 30px 40px;
+    margin: 0 5px; }
+    #contactoSection form .form__container textarea {
+      width: 250px;
+      height: 50%;
+      padding: 10px;
+      outline: 0; }
+    #contactoSection form .form__btncontainer {
+      margin-bottom: 20px; }
+      #contactoSection form .form__btncontainer .btn--form {
+        font-size: 30px;
+        font-weight: bold; } }
 
 .error404 {
   background-color: #fff4ee; }
