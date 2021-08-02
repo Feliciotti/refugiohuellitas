@@ -622,8 +622,6 @@ header {
         outline: 0;
         border: 0;
         background: #ffeadd; }
-        #contactoSection form .form__container div select::-ms-expand {
-          display: none; }
       #contactoSection form .form__container div .select {
         position: relative;
         margin-left: 20px;

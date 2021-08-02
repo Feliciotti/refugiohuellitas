@@ -43,10 +43,6 @@
                     outline: 0;
                     border: 0;
                     background: $pink;
-
-                    &::-ms-expand{
-                        display: none;
-                    }
                 }
 
                 .select {
