@@ -3,6 +3,10 @@
     grid-area: main;
     @include center;
     height: 100vh;
+    background-image: url(../indexbackground-min.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 
     .main__container {
         @include center;
