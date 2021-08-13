@@ -59,7 +59,7 @@ $btn-colour: (
 
 @for $i from 1 through 4 {
     h#{$i} {
-        font-size: (12em / $i) - 1em;
+        font-size: (11em / $i) - 1em;
     }
 }
 

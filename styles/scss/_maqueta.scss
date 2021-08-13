@@ -13,7 +13,7 @@
                         "footer";
     grid-template-columns: auto;
     grid-template-rows: 100px auto auto auto auto;
-    grid-row-gap: 20px;
+    grid-row-gap: auto auto 100px auto auto;
     justify-items: center;
     align-items: center;
 }

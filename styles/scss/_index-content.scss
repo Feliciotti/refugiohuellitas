@@ -33,12 +33,15 @@
                 }
             }
 
-            .rescues--article-title {
+            .rescues__articleTitleContainer {
                 position: relative;
-                text-align: center;
-                margin-top: -50px;
-                margin-bottom: 0px;
+                margin-top: -60px;
+                padding: 5px auto;
                 background-color: rgba(255, 255, 255, 0.801);
+
+                .rescues--article-title {
+                    text-align: center;
+                }
             }
 
             .rescues__p {

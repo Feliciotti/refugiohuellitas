@@ -11,16 +11,16 @@
   background-color: #d67b60; }
 
 h1 {
-  font-size: 11em; }
+  font-size: 10em; }
 
 h2 {
-  font-size: 5em; }
+  font-size: 4.5em; }
 
 h3 {
-  font-size: 3em; }
+  font-size: 2.66667em; }
 
 h4 {
-  font-size: 2em; }
+  font-size: 1.75em; }
 
 @media only screen and (max-width: 540px) {
   h1 {
@@ -56,7 +56,7 @@ h4 {
   grid-template-areas: "header" "main" "section1" "section2" "footer";
   grid-template-columns: auto;
   grid-template-rows: 100px auto auto auto auto;
-  grid-row-gap: 20px;
+  grid-row-gap: auto auto 100px auto auto;
   justify-items: center;
   align-items: center; }
 
@@ -93,7 +93,6 @@ h4 {
 h1, h2, h3, h4 {
   font-family: "Zen Loop", cursive;
   color: #dd2451;
-  word-spacing: 20px;
   font-weight: bold;
   text-align: center; }
 
@@ -236,42 +235,56 @@ header {
   background-position: center center;
   background-size: cover; }
   .mainWrap .main__container {
+    position: absolute;
     display: flex;
     justify-content: center;
-    position: absolute;
     align-self: center; }
     .mainWrap .main__container .main--title {
       position: absolute;
-      top: -50px; }
+      left: 20%; }
     .mainWrap .main__container .main__img {
-      width: 60%;
+      width: 70%;
       height: auto;
       animation-name: aparecer;
       animation-duration: 2s; }
+    .mainWrap .main__container .main-img--donations {
+      width: 40%; }
 
-@media only screen and (max-width: 360px) {
-  .mainWrap .main__container {
-    flex-direction: column;
-    align-items: center; }
-    .mainWrap .main__container .main__img {
-      width: 90%;
-      height: auto; } }
-
-@media only screen and (min-width: 361px) and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .mainWrap .main__container {
     flex-direction: column;
     align-items: center; }
     .mainWrap .main__container .main--title {
       position: absolute;
-      top: -50px; }
+      left: auto;
+      top: -40%; }
     .mainWrap .main__container .main__img {
-      width: 90%;
-      height: auto; } }
+      height: auto;
+      margin-top: 100px; } }
 
-@media only screen and (min-width: 541px) and (max-width: 768px) {
+@media only screen and (max-width: 360px) {
+  .mainWrap .main__container .main__img {
+    width: 90%; } }
+
+@media only screen and (min-width: 361px) and (max-width: 540px) {
+  .mainWrap .main__container .main__img {
+    width: 90%; } }
+
+@media only screen and (min-width: 541px) and (max-width: 700px) {
   .mainWrap .main__img {
-    height: auto;
     width: 60%; } }
+
+@media only screen and (min-width: 701px) and (max-width: 1024px) {
+  .mainWrap .main__container .main--title {
+    position: absolute;
+    left: auto;
+    top: -40%; }
+  .mainWrap .main__container .main__img {
+    width: 90%; } }
+
+@media only screen and (min-width: 1400px) and (max-width: 1920px) {
+  .mainWrap .main__container .main__img {
+    width: 100%; } }
 
 /* ------------- INDEX STEPS ------------- */
 .steps {
@@ -356,12 +369,13 @@ header {
         .rescues .rescues__article-container .rescues__article .rescues__img:hover {
           transition: 1s;
           transform: scale(1.2, 1.2); }
-      .rescues .rescues__article-container .rescues__article .rescues--article-title {
+      .rescues .rescues__article-container .rescues__article .rescues__articleTitleContainer {
         position: relative;
-        text-align: center;
-        margin-top: -50px;
-        margin-bottom: 0px;
+        margin-top: -60px;
+        padding: 5px auto;
         background-color: rgba(255, 255, 255, 0.801); }
+        .rescues .rescues__article-container .rescues__article .rescues__articleTitleContainer .rescues--article-title {
+          text-align: center; }
       .rescues .rescues__article-container .rescues__article .rescues__p {
         background-color: white;
         padding: 10px;
@@ -439,6 +453,7 @@ header {
 
 .refugioArticles {
   grid-area: section1;
+  margin-top: 100px;
   display: grid;
   grid-template-columns: 600px 600px;
   column-gap: 20px;
@@ -476,6 +491,7 @@ header {
 
 #adoptaSection1 {
   grid-area: section1;
+  margin-top: 100px;
   display: grid;
   grid-template-columns: 600px 600px;
   row-gap: 100px;
@@ -556,10 +572,10 @@ header {
 
 .donacionesSection {
   grid-area: section1;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
-  width: auto;
-  margin: 10px auto; }
+  width: auto; }
   .donacionesSection .donaciones__article {
     width: auto; }
     .donacionesSection .donaciones__article .donaciones__paymethod {
@@ -843,7 +859,7 @@ footer {
   font-size: 25px;
   align-items: center;
   height: auto;
-  margin-top: 40px; }
+  margin-top: 100px; }
   footer .footer__ulContainer {
     display: flex;
     justify-content: space-between;
