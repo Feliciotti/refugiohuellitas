@@ -8,6 +8,17 @@
     background-position: center center;
     background-size: cover;
 
+    .mainContainer--nosotros{
+        position: absolute;
+        @include center;
+        align-self: center;
+
+        .main-img--nosotros {
+            width: 50%;
+        }
+
+    }
+
     .main__container {
         position: absolute;
         @include center;
@@ -17,6 +28,12 @@
             position: absolute;
             left: 20%;
         }
+
+        .mainTitle--contact {
+            position: absolute;
+            top: -15%
+        }
+        
 
         .main__img {
             width: 70%;
@@ -29,7 +46,19 @@
             width: 40%
         }
 
+        .main__imgContainer{
+            @include center;
+            width: auto;
+            
+            .mainImg--Contact{
+                margin-left: 300px;
+            }
 
+            .mainImg--cats {
+                width: 25%;
+            }
+
+        }
     }
 
 }
@@ -41,6 +70,16 @@
 
     .mainWrap {
 
+        .mainContainer--nosotros{
+            flex-direction: column;
+            align-items: center;
+    
+            .main-img--nosotros {
+                width: 100%;
+            }
+    
+        }
+
         .main__container {
             flex-direction: column;
             align-items: center;
@@ -48,12 +87,22 @@
             .main--title {
                 position: absolute;
                 left: auto;
-                top: -40%;
             }
 
             .main__img {
                 height: auto;
                 margin-top: 100px;
+            }
+
+            .main__imgContainer{
+            
+                .mainImg--Contact{
+                    margin-left: 0;
+                }
+
+                .contact--catLetter{
+                    display: none;
+                }
             }
 
         }
@@ -67,6 +116,26 @@
     .mainWrap {
 
         .main__container {
+
+            .main__imgContainer{
+            
+                .mainImg--Contact{
+                    margin-left: 0;
+                }
+
+                .main__img {
+                    width: 70%;
+                }
+
+            }
+
+            .main--title {
+                top: -30%;
+            }
+
+            .mainTitle--contact{
+                top: -5%;
+            }
 
             .main__img {
                 width: 90%;
@@ -84,8 +153,30 @@
 
         .main__container {
 
+            .main--title {
+                position: absolute;
+                left: auto;
+                top: -20%;
+            }
+
+            .main--title {
+                top: -5%;
+            }
+
             .main__img {
                 width: 90%;
+            }
+
+            .main__imgContainer{
+            
+                .mainImg--Contact{
+                    margin-left: 0;
+                }
+
+                .main__img {
+                    width: 70%;
+                }
+
             }
 
         }
@@ -98,8 +189,16 @@
 
     .mainWrap {
 
-        .main__img {
-            width: 60%;
+        .main__container {
+
+            .main--title {
+                top: -20%;
+            }
+
+            .main__img {
+                width: 60%;
+            }
+
         }
 
     }
@@ -113,13 +212,27 @@
         .main__container {
 
             .main--title {
-                position: absolute;
-                left: auto;
-                top: -40%;
+                top: -10%;
             }
 
             .main__img {
                 width: 90%;
+            }
+
+            .main--title {
+                top: -10%;
+            }
+
+            .main__imgContainer{
+            
+                .mainImg--Contact{
+                    margin-left: 0;
+                }
+
+                .main__img {
+                    width: 70%;
+                }
+
             }
 
         }
@@ -132,13 +245,37 @@
 
     .mainWrap {
 
+        .mainContainer--nosotros{
+    
+            .main-img--nosotros {
+                width: 100%;
+            }
+    
+        }
+
         .main__container {
+
+            .mainTitle--contact {
+                position: absolute;
+                top: -5%;
+            }
 
             .main__img {
                 width: 100%;
             }
 
+            .main__imgContainer{
+            
+                .mainImg--Contact{
+                    margin-left: 500px;
+                }
+    
+                .mainImg--cats {
+                    width: 100%;
+                }
+            }
         }
+
 
     }
 
