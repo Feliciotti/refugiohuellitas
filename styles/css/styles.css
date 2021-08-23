@@ -10,17 +10,14 @@
 .btn--fourth {
   background-color: #d67b60; }
 
-h1 {
-  font-size: 10em; }
-
 h2 {
-  font-size: 4.5em; }
+  font-size: 5em; }
 
 h3 {
-  font-size: 2.66667em; }
+  font-size: 3em; }
 
 h4 {
-  font-size: 1.75em; }
+  font-size: 2em; }
 
 @media only screen and (max-width: 540px) {
   h1 {
@@ -93,11 +90,13 @@ h1, h2, h3, h4 {
   font-family: "Zen Loop", cursive;
   color: #dd2451;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 20px; }
 
 h1 {
   animation-name: aparecer;
-  animation-duration: 2s; }
+  animation-duration: 2s;
+  font-size: 13em; }
 
 a {
   text-decoration: none;
@@ -111,7 +110,8 @@ a:hover {
 
 p {
   font-family: "Roboto", sans-serif;
-  color: #827161; }
+  color: #827161;
+  font-size: 1.5em; }
 
 /* ------------- SOMBRA ------------- */
 .shadow {
@@ -127,6 +127,25 @@ p {
     opacity: 0; }
   100% {
     opacity: 100%; } }
+
+/* ------------- MEDIA QUERIES ------------- */
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 5em; }
+  p {
+    font-size: 1.2em; } }
+
+@media only screen and (min-width: 361px) and (max-width: 540px) {
+  h1 {
+    font-size: 7em; }
+  p {
+    font-size: 1.2em; } }
+
+@media only screen and (min-width: 541px) and (max-width: 768px) {
+  h1 {
+    font-size: 8em; }
+  p {
+    font-size: 1.2em; } }
 
 /* ------------- HEADER ------------- */
 header {
@@ -404,7 +423,8 @@ header {
 /* ------------- INDEX RESCUES ------------- */
 .rescues {
   grid-area: section2;
-  margin-top: 40px; }
+  margin-top: 40px;
+  margin-bottom: 100px; }
   .rescues .rescues--title {
     font-weight: bolder;
     text-align: center;
@@ -508,6 +528,7 @@ header {
 .article {
   grid-area: section1;
   margin-top: 200px;
+  margin-bottom: 100px;
   display: grid;
   grid-template-columns: 600px 600px;
   grid-column-gap: 20px;
@@ -541,7 +562,7 @@ header {
   .cat_container .catImg--2 {
     display: none; }
   .cat_container .catImg--3 {
-    height: 300px; } }
+    height: 282px; } }
 
 @media only screen and (min-width: 541px) and (max-width: 768px) {
   .cat_container .cat__img {
@@ -582,7 +603,8 @@ header {
   #adoptaSection2 .section2__table {
     height: 700px;
     width: auto;
-    margin-top: 40px; }
+    margin-top: 40px;
+    margin-bottom: 100px; }
     #adoptaSection2 .section2__table table, #adoptaSection2 .section2__table th, #adoptaSection2 .section2__table td {
       border: 3px solid #dd2451;
       background-color: white; }
@@ -611,6 +633,7 @@ header {
 .donacionesSection {
   grid-area: section1;
   margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   width: auto; }
@@ -650,9 +673,12 @@ header {
   grid-area: section1;
   display: flex;
   justify-content: center;
-  margin-top: 100px; }
+  background-image: url(../contactbackground-min.png);
+  background-repeat: repeat; }
   #contactoSection form {
-    background-color: rgba(255, 255, 255, 0.445);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: white;
     border: 10px groove #dd2451;
     color: #827161;
     text-align: center;
@@ -897,8 +923,7 @@ footer {
   font-family: "Zen Loop", cursive;
   font-size: 25px;
   align-items: center;
-  height: auto;
-  margin-top: 100px; }
+  height: auto; }
   footer .footer__ulContainer {
     display: flex;
     justify-content: space-between;

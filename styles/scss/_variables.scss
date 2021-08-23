@@ -57,9 +57,9 @@ $btn-colour: (
 
 // BUCLE ------------------------------------
 
-@for $i from 1 through 4 {
+@for $i from 2 through 4 {
     h#{$i} {
-        font-size: (11em / $i) - 1em;
+        font-size: (12em / $i) - 1em;
     }
 }
 

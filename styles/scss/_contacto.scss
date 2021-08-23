@@ -3,10 +3,14 @@
 #contactoSection {
     grid-area: section1;
     @include center;
-    margin-top: 100px;
+    background-image: url(../contactbackground-min.png);
+    background-repeat: repeat;
+
 
     form {
-        background-color: rgba(255, 255, 255, 0.445);
+        margin-top: 100px;
+        margin-bottom: 100px;
+        background-color: rgb(255, 255, 255);
         border: 10px groove #dd2451;
         color: $brown;
         text-align: center;    
