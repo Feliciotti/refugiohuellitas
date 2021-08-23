@@ -90,13 +90,12 @@ h1, h2, h3, h4 {
   font-family: "Zen Loop", cursive;
   color: #dd2451;
   font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px; }
+  text-align: center; }
 
 h1 {
   animation-name: aparecer;
   animation-duration: 2s;
-  font-size: 13em; }
+  font-size: 11em; }
 
 a {
   text-decoration: none;
@@ -111,7 +110,7 @@ a:hover {
 p {
   font-family: "Roboto", sans-serif;
   color: #827161;
-  font-size: 1.5em; }
+  font-size: 1.3em; }
 
 /* ------------- SOMBRA ------------- */
 .shadow {
@@ -133,7 +132,7 @@ p {
   h1 {
     font-size: 5em; }
   p {
-    font-size: 1.2em; } }
+    font-size: 1.5em; } }
 
 @media only screen and (min-width: 361px) and (max-width: 540px) {
   h1 {
@@ -286,7 +285,7 @@ header {
       .mainWrap .main__container .main__imgContainer .mainImg--cats {
         width: 25%; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .mainWrap .mainContainer--nosotros {
     flex-direction: column;
     align-items: center; }
@@ -307,8 +306,6 @@ header {
       display: none; } }
 
 @media only screen and (max-width: 360px) {
-  .mainWrap .main__container .main__imgContainer .mainImg--Contact {
-    margin-left: 0; }
   .mainWrap .main__container .main__imgContainer .main__img {
     width: 70%; }
   .mainWrap .main__container .main--title {
@@ -327,8 +324,6 @@ header {
     top: -5%; }
   .mainWrap .main__container .main__img {
     width: 90%; }
-  .mainWrap .main__container .main__imgContainer .mainImg--Contact {
-    margin-left: 0; }
   .mainWrap .main__container .main__imgContainer .main__img {
     width: 70%; } }
 
@@ -345,10 +340,8 @@ header {
     width: 90%; }
   .mainWrap .main__container .main--title {
     top: -10%; }
-  .mainWrap .main__container .main__imgContainer .mainImg--Contact {
-    margin-left: 0; }
   .mainWrap .main__container .main__imgContainer .main__img {
-    width: 70%; } }
+    width: 100%; } }
 
 @media only screen and (min-width: 1400px) and (max-width: 1920px) {
   .mainWrap .mainContainer--nosotros .main-img--nosotros {
@@ -453,7 +446,8 @@ header {
         padding: 5px auto;
         background-color: rgba(255, 255, 255, 0.801); }
         .rescues .rescues__article-container .rescues__article .rescues__articleTitleContainer .rescues--article-title {
-          text-align: center; }
+          text-align: center;
+          margin-bottom: 0; }
       .rescues .rescues__article-container .rescues__article .rescues__p {
         background-color: white;
         padding: 10px;
@@ -760,16 +754,16 @@ header {
 
 @media only screen and (max-width: 359px) {
   #contactoSection form {
-    padding: 5px 5px;
-    border: 5px groove #dd2451;
-    margin: 0 5px; }
+    padding: 20px 0;
+    border: 4px groove #dd2451;
+    width: 270px; }
     #contactoSection form .form__container {
       padding-bottom: 20px; }
       #contactoSection form .form__container select {
         display: flex; }
       #contactoSection form .form__container textarea {
         border: groove 2px #dd2451;
-        width: 250px;
+        width: 230px;
         height: 50%;
         padding: 10px;
         outline: 0; }
@@ -781,9 +775,8 @@ header {
 
 @media only screen and (min-width: 360px) and (max-width: 540px) {
   #contactoSection form {
-    padding: 15px 15px;
-    border: 5px groove #dd2451;
-    margin: 0 5px; }
+    padding: 15px 10px;
+    border: 5px groove #dd2451; }
     #contactoSection form .form__container {
       padding-bottom: 20px; }
       #contactoSection form .form__container .form__select {
@@ -805,8 +798,7 @@ header {
 
 @media only screen and (min-width: 541px) and (max-width: 768px) {
   #contactoSection form {
-    padding: 30px 40px;
-    margin: 0 5px; }
+    padding: 30px 40px; }
     #contactoSection form .form__container textarea {
       width: 250px;
       height: 50%;

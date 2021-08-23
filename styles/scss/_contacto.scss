@@ -115,9 +115,9 @@
 @media only screen and (max-width: 359px) {
     #contactoSection {
         form {
-            padding: 5px 5px;
-            border: 5px groove $red;
-            margin: 0 5px;
+            padding: 20px 0;
+            border: 4px groove $red;
+            width: 270px;
 
             .form__container {
                 padding-bottom: 20px;
@@ -128,7 +128,7 @@
     
                 textarea {
                     border: groove 2px $red;
-                    width: 250px;
+                    width: 230px;
                     height: 50%;
                     padding: 10px;
                     outline: 0;
@@ -152,9 +152,8 @@
 
     #contactoSection {
         form {
-            padding: 15px 15px;
+            padding: 15px 10px;
             border: 5px groove $red;
-            margin: 0 5px;
 
             .form__container {
                 padding-bottom: 20px;
@@ -196,8 +195,6 @@
     #contactoSection {
         form {
             padding: 30px 40px;
-            margin: 0 5px;
-
             .form__container {
     
                 textarea {

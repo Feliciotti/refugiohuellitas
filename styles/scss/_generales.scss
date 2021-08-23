@@ -4,13 +4,12 @@ h1, h2, h3, h4 {
     color: $red;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 h1 {
     animation-name: aparecer;
     animation-duration: 2s;
-    font-size: 13em;
+    font-size: 11em;
 }
 
 a {
@@ -28,7 +27,7 @@ a:hover {
 p {
     font-family: $text;
     color: $brown;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 /* ------------- SOMBRA ------------- */
@@ -62,7 +61,7 @@ p {
     }
     
     p {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
 }
