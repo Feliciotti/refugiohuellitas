@@ -11,14 +11,24 @@ footer {
     .footer__ulContainer {
         display: flex;
         justify-content: space-between;
-        padding: 20px 30px;
+        padding: 30px 60px;
 
         .footer__list{
             list-style: none;
+
+            li{
+                margin-bottom: 15px;
+
+                &:first-of-type {
+                    font-weight: bold;
+                    text-decoration: underline;
+                    font-size: 1em;
+                }
+
+            }
         }
 
         .socialMedia {
-            display: flex;
             
             li {
 
@@ -26,17 +36,18 @@ footer {
                     color: $light-pink;
 
                     i {
-                        font-size: 35px;
-                        
-                        &:nth-child(-n+2) {
-                            margin-left: 30px;
-                            }
+                        font-size: 30px;
+
                         &:hover {
                             color: #d67b60;
                         }
     
                     }
 
+                }
+
+                span {
+                    font-weight: normal;
                 }
 
 
@@ -74,9 +85,11 @@ footer {
             .footer__list{
                 padding: 0;
                 text-align: center;
+                margin-top: 40px;
             }
 
             .socialMedia {
+                margin-top: 40px;
                 
                 li {
 

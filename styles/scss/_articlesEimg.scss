@@ -1,11 +1,10 @@
 .article {
     grid-area: section1;
     margin-top: 200px;
-    margin-bottom: 100px;
     display: grid;
     grid-template-columns: 600px 600px;
     grid-column-gap: 20px;
-    row-gap: 100px;
+    grid-row-gap: 100px;
     justify-content: center;
 }
 
@@ -45,7 +44,7 @@
             height: 170px;
         }
 
-        .carImg--3 {
+        .catImg--3 {
             height: 200px;
         }
     }
@@ -79,12 +78,8 @@
             height: 400px;
         }
 
-        .catImg--2{
-            display: none;
-        }
-
         .catImg--3 {
-            height: 500px;
+            height: 400px;
         }
     }
     

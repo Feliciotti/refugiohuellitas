@@ -20,28 +20,20 @@ h4 {
   font-size: 2em; }
 
 @media only screen and (max-width: 540px) {
-  h1 {
-    font-size: 4.2em; }
   h2 {
     font-size: 2.2em; }
   h3 {
     font-size: 1.53333em; }
   h4 {
-    font-size: 1.2em; }
-  p {
-    font-size: 18px; } }
+    font-size: 1.2em; } }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-  h1 {
-    font-size: 7em; }
   h2 {
     font-size: 3em; }
   h3 {
     font-size: 1.66667em; }
   h4 {
-    font-size: 1em; }
-  p {
-    font-size: 25px; } }
+    font-size: 1em; } }
 
 * {
   margin: 0;
@@ -114,11 +106,11 @@ p {
 
 /* ------------- SOMBRA ------------- */
 .shadow {
-  width: 60%;
+  width: 80%;
   height: 15px;
   background-color: rgba(0, 0, 0, 0.116);
   border-radius: 50%;
-  margin: 10px auto; }
+  margin: 5px auto 100px auto; }
 
 /* ------------- KEYFRAMES ------------- */
 @keyframes aparecer {
@@ -130,9 +122,11 @@ p {
 /* ------------- MEDIA QUERIES ------------- */
 @media only screen and (max-width: 360px) {
   h1 {
-    font-size: 5em; }
+    font-size: 4em; }
   p {
-    font-size: 1.5em; } }
+    font-size: 1em; }
+  .shadow {
+    margin: 5px auto 30px auto; } }
 
 @media only screen and (min-width: 361px) and (max-width: 540px) {
   h1 {
@@ -522,11 +516,10 @@ header {
 .article {
   grid-area: section1;
   margin-top: 200px;
-  margin-bottom: 100px;
   display: grid;
   grid-template-columns: 600px 600px;
   grid-column-gap: 20px;
-  row-gap: 100px;
+  grid-row-gap: 100px;
   justify-content: center; }
 
 .cat_container {
@@ -547,7 +540,7 @@ header {
 @media only screen and (max-width: 360px) {
   .cat_container .cat__img {
     height: 170px; }
-  .cat_container .carImg--3 {
+  .cat_container .catImg--3 {
     height: 200px; } }
 
 @media only screen and (min-width: 361px) and (max-width: 540px) {
@@ -561,10 +554,8 @@ header {
 @media only screen and (min-width: 541px) and (max-width: 768px) {
   .cat_container .cat__img {
     height: 400px; }
-  .cat_container .catImg--2 {
-    display: none; }
   .cat_container .catImg--3 {
-    height: 500px; } }
+    height: 400px; } }
 
 @media only screen and (min-width: 769px) and (max-width: 1920px) {
   .cat_container .catImg--3 {
@@ -598,9 +589,10 @@ header {
     height: 700px;
     width: auto;
     margin-top: 40px;
-    margin-bottom: 100px; }
-    #adoptaSection2 .section2__table table, #adoptaSection2 .section2__table th, #adoptaSection2 .section2__table td {
-      border: 3px solid #dd2451;
+    margin-bottom: 100px;
+    border: 2px solid #dd2451; }
+    #adoptaSection2 .section2__table th, #adoptaSection2 .section2__table td {
+      border: 2px solid #dd2451;
       background-color: white; }
     #adoptaSection2 .section2__table th {
       background-color: #fff4ee;
@@ -626,13 +618,18 @@ header {
 
 .donacionesSection {
   grid-area: section1;
-  margin-top: 100px;
-  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
-  width: auto; }
+  background-image: url(../contactbackground-min.png); }
   .donacionesSection .donaciones__article {
-    width: auto; }
+    width: auto;
+    background-color: #fff4ee;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0; }
     .donacionesSection .donaciones__article .donaciones__paymethod {
       display: grid;
       grid-template-columns: auto 500px;
@@ -642,10 +639,10 @@ header {
       margin-top: 40px; }
       .donacionesSection .donaciones__article .donaciones__paymethod:nth-child(n+3) {
         margin-top: 70px; }
-      .donacionesSection .donaciones__article .donaciones__paymethod div h3 {
-        word-spacing: 3px; }
-  .donacionesSection .pagosLogo {
-    width: 200px; }
+      .donacionesSection .donaciones__article .donaciones__paymethod .donaciones__logocontainer .pagos--local {
+        height: 150px; }
+      .donacionesSection .donaciones__article .donaciones__paymethod .donaciones__logocontainer .pagosLogo {
+        width: 170px; }
 
 @media only screen and (max-width: 768px) {
   .donacionesSection .donaciones__article {
@@ -658,9 +655,7 @@ header {
       flex-direction: column;
       padding: 0 10px; }
       .donacionesSection .donaciones__article .donaciones__paymethod:nth-child(n+3) {
-        margin-top: 70px; }
-  .donacionesSection .pagosLogo {
-    width: 200px; } }
+        margin-top: 70px; } }
 
 /* ------------- CONTACTO - FORMULARIO ------------- */
 #contactoSection {
@@ -919,19 +914,23 @@ footer {
   footer .footer__ulContainer {
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px; }
+    padding: 30px 60px; }
     footer .footer__ulContainer .footer__list {
       list-style: none; }
-    footer .footer__ulContainer .socialMedia {
-      display: flex; }
-      footer .footer__ulContainer .socialMedia li .footer__icon {
-        color: #fff4ee; }
-        footer .footer__ulContainer .socialMedia li .footer__icon i {
-          font-size: 35px; }
-          footer .footer__ulContainer .socialMedia li .footer__icon i:nth-child(-n+2) {
-            margin-left: 30px; }
-          footer .footer__ulContainer .socialMedia li .footer__icon i:hover {
-            color: #d67b60; }
+      footer .footer__ulContainer .footer__list li {
+        margin-bottom: 15px; }
+        footer .footer__ulContainer .footer__list li:first-of-type {
+          font-weight: bold;
+          text-decoration: underline;
+          font-size: 1em; }
+    footer .footer__ulContainer .socialMedia li .footer__icon {
+      color: #fff4ee; }
+      footer .footer__ulContainer .socialMedia li .footer__icon i {
+        font-size: 30px; }
+        footer .footer__ulContainer .socialMedia li .footer__icon i:hover {
+          color: #d67b60; }
+    footer .footer__ulContainer .socialMedia li span {
+      font-weight: normal; }
   footer .footer__text {
     font-family: "Zen Loop", cursive;
     color: #fff4ee;
@@ -951,8 +950,11 @@ footer {
     padding: 10px 0; }
     footer .footer__ulContainer .footer__list {
       padding: 0;
-      text-align: center; }
-    footer .footer__ulContainer .socialMedia li .footer__icon i {
-      font-size: 35px; }
-      footer .footer__ulContainer .socialMedia li .footer__icon i:nth-child(-n+2) {
-        margin-left: 10px; } }
+      text-align: center;
+      margin-top: 40px; }
+    footer .footer__ulContainer .socialMedia {
+      margin-top: 40px; }
+      footer .footer__ulContainer .socialMedia li .footer__icon i {
+        font-size: 35px; }
+        footer .footer__ulContainer .socialMedia li .footer__icon i:nth-child(-n+2) {
+          margin-left: 10px; } }
