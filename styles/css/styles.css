@@ -141,7 +141,7 @@ p {
     font-size: 1.2em; } }
 
 /* ------------- HEADER ------------- */
-header {
+.main-header {
   grid-area: header;
   height: auto;
   display: flex;
@@ -149,60 +149,71 @@ header {
   align-items: center;
   padding: 5px 30px;
   z-index: 1;
-  position: absolute;
-  width: 100%; }
-  header .logo {
+  width: 100%;
+  position: fixed;
+  transition: .6s ease-out; }
+  .main-header .logo {
     height: 80px; }
-  header nav {
+  .main-header nav {
     display: flex;
     align-items: center; }
-    header nav .menu-btn {
+    .main-header nav .menu-btn {
       display: none; }
-    header nav .menu-icon {
+    .main-header nav .menu-icon {
       position: relative;
       cursor: pointer;
       z-index: 1;
       padding: 20px 10px;
       display: none; }
-      header nav .menu-icon__line {
+      .main-header nav .menu-icon__line {
         display: block;
         position: relative;
         background: #827161;
         height: 2px;
         width: 25px;
         border-radius: 4px; }
-        header nav .menu-icon__line::before, header nav .menu-icon__line::after {
+        .main-header nav .menu-icon__line::before, .main-header nav .menu-icon__line::after {
           content: '';
           position: absolute;
           height: 100%;
           width: 100%;
           border-radius: 4px;
           background: #827161; }
-        header nav .menu-icon__line::before {
+        .main-header nav .menu-icon__line::before {
           transform: translateY(-5px); }
-        header nav .menu-icon__line::after {
+        .main-header nav .menu-icon__line::after {
           transform: translateY(5px); }
-    header nav .nav-links {
+    .main-header nav .nav-links {
       display: flex;
       list-style: none; }
-      header nav .nav-links .nav__link a {
+      .main-header nav .nav-links .nav__link a {
         font-family: "Zen Loop", cursive;
         font-size: 30px;
         margin: auto 0;
         line-height: 70px; }
-        header nav .nav-links .nav__link a:nth-child(-n+4) {
+        .main-header nav .nav-links .nav__link a:nth-child(-n+4) {
           margin-right: 2rem; }
+  .main-header.scrolled {
+    height: 90px;
+    background-color: #fff4eec4;
+    color: #827161;
+    box-shadow: 0px 0px 10px rgba(71, 71, 71, 0.151); }
 
 @media only screen and (max-width: 768px) {
-  header {
+  .main-header {
     position: fixed;
     width: 100vw; }
-    header nav .menu-btn:checked ~ .nav-links {
+    .main-header.scrolled {
+      height: 85px;
+      background-color: #fff4ee42;
+      color: #827161;
+      box-shadow: none; }
+    .main-header nav .menu-btn:checked ~ .nav-links {
       opacity: 1;
       clip-path: circle(100% at center); }
-    header nav .menu-icon {
+    .main-header nav .menu-icon {
       display: block; }
-    header nav .nav-links {
+    .main-header nav .nav-links {
       position: absolute;
       top: 0;
       left: 0;
@@ -215,12 +226,12 @@ header {
       background: #fff4ee;
       transition: opacity .8s .3s, clip-path 1s .2s;
       clip-path: circle(200px at top right); }
-      header nav .nav-links .nav__link a {
+      .main-header nav .nav-links .nav__link a {
         font-family: "Zen Loop", cursive;
         font-size: 30px;
         margin: auto 0;
         line-height: 70px; }
-        header nav .nav-links .nav__link a:nth-child(-n+4) {
+        .main-header nav .nav-links .nav__link a:nth-child(-n+4) {
           margin-right: 2rem; } }
 
 @media only screen and (max-width: 540px) {
@@ -584,7 +595,10 @@ header {
   grid-template-columns: 1000px;
   grid-template-rows: 150px auto;
   justify-content: center;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  background-image: url(../contactbackground-min.png); }
+  #adoptaSection2 div h2 {
+    text-shadow: 1px 1px 1px #fff4ee; }
   #adoptaSection2 .section2__table {
     height: 700px;
     width: auto;
@@ -612,6 +626,59 @@ header {
       text-align: center;
       padding: 30px; }
 
+.carrusel_container {
+  width: 1200px;
+  height: 460px;
+  margin: 30px auto;
+  overflow: hidden;
+  position: relative; }
+  .carrusel_container .banner {
+    width: 1200px;
+    height: 460px;
+    position: relative;
+    overflow: hidden; }
+    .carrusel_container .banner .banner-slide {
+      width: 1200px;
+      height: 460px;
+      position: absolute; }
+      .carrusel_container .banner .banner-slide .banner__text {
+        margin: 30px auto auto 200px;
+        width: 500px;
+        color: #dd2451;
+        font-family: "Zen Loop", cursive;
+        font-size: 35px; }
+    .carrusel_container .banner .slide-active {
+      display: block; }
+    .carrusel_container .banner .slide1 {
+      background: url("../test1.png"); }
+    .carrusel_container .banner .slide2 {
+      background: url("../test2.png"); }
+    .carrusel_container .banner .slide3 {
+      background: url("../test3.png"); }
+    .carrusel_container .banner .slide1, .carrusel_container .banner .slide2, .carrusel_container .banner .slide3 {
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 35%;
+      background-position-x: 85%; }
+  .carrusel_container .dots {
+    position: absolute;
+    right: 20px;
+    bottom: 24px;
+    text-align: right; }
+    .carrusel_container .dots span {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50px;
+      background-color: #ffcc74de;
+      margin-right: 8px;
+      line-height: 12px;
+      box-shadow: 0 0 0 2px #ffcd74 inset;
+      cursor: pointer; }
+    .carrusel_container .dots .active {
+      box-shadow: 0 0 0 2px rgba(27, 23, 7, 0.253) inset;
+      background: #d67b60; }
+
 @media only screen and (max-width: 768px) {
   #adoptaSection2 {
     display: none; } }
@@ -619,8 +686,10 @@ header {
 .donacionesSection {
   grid-area: section1;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  background-image: url(../contactbackground-min.png); }
+  background-image: url(../contactbackground-min.png);
+  background-repeat: repeat; }
   .donacionesSection .donaciones__article {
     width: auto;
     background-color: #fff4ee;
@@ -746,6 +815,10 @@ header {
           color: #dd2451; }
         #contactoSection form .form__btncontainer .btn--form:first-child {
           margin-right: 20px; }
+    #contactoSection form .warning {
+      text-align: center;
+      margin: auto;
+      padding-top: 10px; }
 
 @media only screen and (max-width: 359px) {
   #contactoSection form {

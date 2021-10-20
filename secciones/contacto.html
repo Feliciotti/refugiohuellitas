@@ -12,7 +12,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/css/styles.css">
-
+    
     <!-- favicon -->
     <link rel="icon" href="../img/favicon-min.png">
     <script src="https://kit.fontawesome.com/94a2d94b80.js" crossorigin="anonymous"></script>
@@ -27,7 +27,7 @@
 <body>
     <div class="body">
         <!--HEADER-->
-        <header>
+        <header class="main-header">
             <!--LOGO-->
             <div>
                 <a href="../index.html">
@@ -65,24 +65,23 @@
         <!--FORMULARIO-->
         <section id="contactoSection">
             <!--DATOS DE LA PERSONA-->
-            <form action="">
+            <form id="form" action="">
                 <div class="form__container">
-                    <div>
+
                         <label class="personData" for="name">Nombre</label>
-                        <input type="text" name="name" required>
-                    </div>
-                    <div>
+                        <input type="text" name="name" id="name">
+                        <div id="msj1" class="msj">El nombre es requerido</div>
+
+
                         <label class="personData" for="surname">Apellido</label>
-                        <input type="text" name="surname" required>
-                    </div>
-                    <div>
+                        <input type="text" name="surname" id="surname">
+                        <div id="msj2" class="msj">El apellido es requerido</div>
+
+
                         <label class="personData" for="email">e-mail</label>
-                        <input type="email" name="email" required>
-                    </div>
-                    <div>
-                        <label class="personData" for="number">Teléfono</label>
-                        <input type="tel" placeholder="011+" name="number" required>
-                    </div>
+                        <input type="email" name="email" id="email">
+                        <div id="msj3" class="msj">El e-mail es requerido</div>
+
                     <div class="form__select">
                         <label class="personData" for="localidad">Localidad</label>
                         <select class="select" name="localidad" required>
@@ -117,33 +116,59 @@
 
                 <div class="form__btncontainer">
                     <input class="btn--form btn--second" type="reset">
-                    <input class="btn--form btn--third" type="submit">
+                    <button type="button" onclick="validarFormulario()" >Enviar</button>
                 </div>
 
+                <p class="warning" id="warning"></p>
 
             </form>
             
         </section>
+
         <!--FOOTER-->
         <section>
             <footer>
                 <div class="footer__ulContainer">
                     <ul class="footer__list">
-                        <li>Dirección 1234, 1°A</li>
-                        <li>+54 011 11 22 33 44</li>
-                        <li>huellitas@refugio.com</li>
+                        <li>
+                            CONTACTO
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Somestreet 1234, 1°A
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            +54 011 11 22 33 44
+                        </li>
+                        <li>
+                            <i class="fas fa-at"></i>
+                            huellitas@refugio.com
+                        </li>
                     </ul>
                     <ul class="footer__list socialMedia">
                         <li>
-                            <a class="footer__icon" href="#"><i class="fab fa-facebook"></i></a>
+                            ENCONTRANOS EN
+                        </li>
+                        <li>
+                            <a class="footer__icon" href="#">
+                                <i class="fab fa-facebook"></i>
+                                <span>.../RefugioHuellitas</span>
+                            </a>
                         </li>
 
                         <li>
-                            <a class="footer__icon" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="footer__icon" href="#">
+                                <i class="fab fa-instagram"></i>
+                                <span>.../Refugio-Huellitas</span>
+                            </a>
                         </li>
 
                         <li>
-                            <a class="footer__icon" href="https://github.com/Feliciotti" target=_blank><i class="fab fa-github"></i></a>
+                            <a class="footer__icon" href="https://github.com/Feliciotti" target=_blank>
+                                <i class="fab fa-github"></i>
+                                <span>.../Feliciotti</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -154,6 +179,10 @@
         </section>
 
     </div>
+
+    <!--JAVASCRIPT-->
+    <script src="../styles/js/main.js"></script>
+
 </body>
 
 </html>

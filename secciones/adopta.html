@@ -26,7 +26,7 @@
 <body>
     <div class="body">
         <!--HEADER-->
-        <header>
+        <header class="main-header">
             <!--LOGO-->
             <div>
                 <a href="../index.html">
@@ -102,8 +102,6 @@
         <section id="adoptaSection2">
             <div>
                 <h2>¿A quién adoptar?</h2>
-                <p>Hay gatitos de todas las edades esperando por una familia, le dejamos una guía para decidir
-                    cuál de ellos se adaptaría mejor a su estilo de vida: </p>
             </div>
             <!--TABLA GUÍA-->
             <div>
@@ -141,6 +139,58 @@
                 </table>
             </div>
         </section>
+
+        <!--CARRUSEL-->
+        
+        <h2>Testimonios de adoptantes</h2>
+        <section class="carrusel_container" id="carrusel_container">
+
+            
+            <div class="banner" id="banner">
+    
+                <!-- Use la imagen como imagen de fondo, pero también como hipervínculo-->
+                <a href="">
+                    <div class="banner-slide slide1 slide-active">
+                        <p class="banner__text">
+                            "Es el gato más gordo que he visto" <br>
+                            -Fernanda
+                        </p>
+                    </div>
+                    <!-- Qué div es actual, agregue slide-active a cual-->
+                </a>
+                <a href="">
+                    <div class="banner-slide slide2">
+                        <p class="banner__text">
+                            "Adopté a Luli, me sigue a todos lados.
+                            A la noche duerme en mi cama, con mi otro gato.
+                            Me levanto toda contracturada... no me arrepiento" <br>
+                             -Cynthia.
+                        </p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="banner-slide slide3">
+                        <p class="banner__text">
+                            "Adopté a Chipi, se enfermó y gasté mis ahorros en veterinario.
+                            Siempre que llego al departamento me recibe, abro la puerta y está
+                            ahí detrás. <br>
+                            Es linda." <br>
+                             -Aimon.
+                        </p>
+                    </div>
+                </a>
+                <!-- Sobrescribir después de escribir-->
+            </div>
+
+            <!-- Navegación de puntos, haga clic para cambiar de imagen-->
+            <div class="dots" id="dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </section>
+
         
         <!--FOOTER-->
         <section>
@@ -196,5 +246,9 @@
         </section>
 
     </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../styles/js/main.js"></script>
 </body>
 </html>

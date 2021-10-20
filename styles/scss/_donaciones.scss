@@ -1,8 +1,9 @@
 .donacionesSection {
     grid-area: section1;
-    display: flex;
+    @include center;
     flex-direction: column;
     background-image: url(../contactbackground-min.png);
+    background-repeat: repeat;
 
     .donaciones__article {
         width: auto;

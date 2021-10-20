@@ -5,6 +5,13 @@
     grid-template-rows: 150px auto;
     justify-content: center;
     margin-bottom: 20px;
+    background-image: url(../contactbackground-min.png);
+
+    div {
+        h2{
+            text-shadow: 1px 1px 1px $light-pink;
+        }
+    }
 
     .section2__table{
         height: 700px;
@@ -45,6 +52,85 @@
     }
 
 }
+
+.carrusel_container{
+    width: 1200px;
+    height: 460px;
+    margin: 30px auto;
+    overflow: hidden;//Ocultar fuera de rango
+    position: relative;
+
+    .banner{
+        width: 1200px;
+        height: 460px;
+        position: relative;
+        overflow: hidden;
+
+        .banner-slide{
+            width: 1200px;
+            height: 460px;
+            position: absolute;
+            
+            .banner__text {
+                margin: 30px auto auto 200px;
+                width: 500px;
+                color: $red;
+                font-family: $title;
+                font-size: 35px;
+            }
+        }
+
+        .slide-active{
+            display: block;
+        }
+        
+        .slide1 {
+            background: url("../test1.png");
+        }
+        .slide2{
+            background: url("../test2.png");
+
+        }
+        .slide3{
+            background: url("../test3.png");
+
+        }
+
+        .slide1, .slide2, .slide3{
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 35%;
+            background-position-x: 85%;
+        }
+    }
+
+    .dots{
+        position: absolute;
+        right: 20px;//A la derecha * /
+        bottom: 24px;
+        text-align: right;
+
+        span{
+            display: inline-block;//Aparece en una línea * /
+            width: 12px;
+            height: 12px;
+            border-radius: 50px;
+            background-color: #ffcc74de;//Establecer transparencia al mismo tiempo * /
+            margin-right: 8px;
+            line-height: 12px;
+            box-shadow: 0 0 0 2px #ffcd74 inset;//Agregar recuadro blanco: sombra interna * /
+            cursor: pointer;
+        }
+
+        .active{
+            box-shadow: 0 0 0 2px rgba(27, 23, 7, 0.253) inset;//El color de fondo actual es blanco * /
+            background: #d67b60;
+        }
+    }
+}
+
+
+
 
 // MEDIAQUERIES ------------------------------
 
