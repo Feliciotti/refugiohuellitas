@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../styles/css/styles.css">
+    <link rel="stylesheet" href="../styles/css/main.css">
 
     <!-- favicon -->
     <link rel="icon" href="../img/favicon-min.png">
@@ -25,15 +25,13 @@
 </head>
 <body>
     <div class="body">
-        <!--HEADER-->
-        <header class="main-header">
-            <!--LOGO-->
+        <header class="header">
+            <!--logo-->
             <div>
                 <a href="../index.html">
                     <img class="logo" src="../img/logo-min.png" alt="Logo del Refugio">
                 </a>
             </div>
-            <!-- NAV BAR -->
             <nav>
                 <input type="checkbox" class="menu-btn" id="menu-btn">
                 <label for="menu-btn" class="menu-icon">
@@ -41,7 +39,7 @@
                 </label>
 
                 <ul class="nav-links">
-                    <li class="nav__link"><a href="../pages/el-refugio.html">Nosotros</a></li>
+                    <li class="nav__link"><a href="../pages/nosotros.html">Nosotros</a></li>
                     <li class="nav__link"><a href="../pages/adopta.html">Adoptá!</a></li>
                     <li class="nav__link"><a href="../pages/transito.html">Tránsito</a></li>
                     <li class="nav__link"><a href="../pages/donaciones.html">Donaciones</a></li>
@@ -50,88 +48,91 @@
             </nav>
         </header>
 
-        <!-- BANNER -->
-        <main class="mainWrap">
-            <div class="main__container">
-                <h1 class="main--title">Adopciones</h1>
-                <img class="main__img" src="../img/adopta-min.png" alt="Imagen de cabecera">
+        <!-- hero -->
+        <main class="hero-container">
+            <div class="hero">
+                <h1 class="hero--title">Adopciones</h1>
+                <img class="hero--img" src="../img/adopta-min.png" alt="Imagen de cabecera">
             </div>
         </main>
         
-        <section class="article">
-            <article>
-                <h2 class="adopta__title">¿Por qué adoptar?</h2>
-                <h3>Una nueva oportunidad...</h3>
-                <p> Muchos gatitos han perdido su hogar o han nacido en la calle, terminando
-                    expuestos a enfermedades, hambre, frío, acortando muchísimo su expectativa
-                    de vida, etc.
-                    Adoptando se ayuda a estos animales a tener una vida digna,
-                    además al adoptar se libera espacio en el refugio lo que nos permite seguir
-                    rescatando, ya que a veces los refugios se ven desbordados y muchos animales
-                    no pueden conseguir la ayuda que necesitan.
-                </p>
+        <section class="info">
+            <h2 class="adopciones-title">¿Por qué adoptar?</h2>
+            <article class="info-article">
+                <div>
+                    <h3>Una nueva oportunidad...</h3>
+                    <p> Muchos gatitos han perdido su hogar o han nacido en la calle, terminando
+                        expuestos a enfermedades, hambre, frío, acortando muchísimo su expectativa
+                        de vida, etc.
+                        Adoptando se ayuda a estos animales a tener una vida digna,
+                        además al adoptar se libera espacio en el refugio lo que nos permite seguir
+                        rescatando, ya que a veces los refugios se ven desbordados y muchos animales
+                        no pueden conseguir la ayuda que necesitan.
+                    </p>
+                </div>
+                <div class="article-imgContainer">
+                    <img class="article-img" src="../img/adopta-calle-min.png" alt="Imagen temporaria">
+                </div>
             </article>
-            <div class="cat_container">
-                <img class="cat__img" src="../img/adopta-calle-min.png" alt="Imagen temporaria">
-            </div>
-            <div class="cat_container">
-                <img class="cat__img catImg--2" src="../img/adopta-crias-min.png" alt="Imagen temporaria">
-            </div>
-            <article>
-                <h3>Adoptá! no compres...</h3>
-                <p> La mayoría de los criaderos explotan y torturan a los animales, por ejemplo,
-                    haciendo parír una y otra vez a las hembras para tener constantemente "stock" y 
-                    cuando la hembra ya no puede parir simplemente la descartan tirándola a la calle.
-                    También son totalmente irresponsables a la hora de vender, ya que no les interesa
-                    quién y con qué fines compra el animal (el cual es común que se entregue enfermo
-                    y muera debido a las condiciones en las que se lo tenía).
-                    Adoptando se ayuda muchísimo a terminar con ésta práctica, ya que al no haber clientes
-                    no hay mercado.
-                    <br>
-                    <br>
-                    Los refugios nos aseguramos de que todos nuestros animales estén sanos, sobre todo antes
-                    de irse a su nuevo hogar. Curamos a los enfermos, castramos, rehabilitamos y los adoptantes
-                    son seleccionados cuidadosamente y correctamente informados para asegurarnos de que los
-                    animales vayan a un hogar seguro y lleno de amor.
-                </p>
+
+            <article class="info-article info-article--2">
+                <div class="article-imgContainer">
+                    <img class="article-img" src="../img/adopta-crias-min.png" alt="Imagen temporaria">
+                </div>
+                <div>
+                    <h3>Adoptá! no compres...</h3>
+                    <p> La mayoría de los criaderos explotan y torturan a los animales, por ejemplo,
+                        haciendo parír una y otra vez a las hembras para tener constantemente "stock" y 
+                        cuando la hembra ya no puede parir simplemente la descartan tirándola a la calle.
+                        También son totalmente irresponsables a la hora de vender, ya que no les interesa
+                        quién y con qué fines compra el animal (el cual es común que se entregue enfermo
+                        y muera debido a las condiciones en las que se lo tenía).
+                        Adoptando se ayuda muchísimo a terminar con ésta práctica, ya que al no haber clientes
+                        no hay mercado.
+                        <br>
+                        <br>
+                        Los refugios nos aseguramos de que todos nuestros animales estén sanos, sobre todo antes
+                        de irse a su nuevo hogar. Curamos a los enfermos, castramos, rehabilitamos y los adoptantes
+                        son seleccionados cuidadosamente y correctamente informados para asegurarnos de que los
+                        animales vayan a un hogar seguro y lleno de amor.
+                    </p>
+                </div>
             </article>
-            <div class="cat_container">
-                <img class="cat__img catImg--3" src="../img/adopta-crias-min.png" alt="Imagen temporaria">
-            </div>
         </section>
-        <section id="adoptaSection2">
-            <div>
+
+        <section id="adoption-grid--container">
+            <div class="adopciones-title adopciones-title--grid">
                 <h2>¿A quién adoptar?</h2>
             </div>
             <!--TABLA GUÍA-->
             <div>
-                <table class="section2__table" cellspacing="0" cellpadding="5px">
+                <table class="adoption-grid" cellspacing="0" cellpadding="5px">
                     <thead>
-                        <th class="tableColumnTitle">Característica</th>
-                        <th class="tableColumnTitle">Cachorros</th>
-                        <th class="tableColumnTitle">Adultos</th>
-                        <th class="tableColumnTitle">Ancianos</th>
+                        <th>Característica</th>
+                        <th>Cachorros</th>
+                        <th>Adultos</th>
+                        <th>Ancianos</th>
                     </thead>
                     <tr>
-                        <td class="firstVerticalRow">Dependencia</td>
+                        <td class="grid-firstVerticalRow">Dependencia</td>
                         <td>Alto nivel de dependecia.</td>
                         <td>Intermedio.</td>
                         <td>Bajo nivel de dependencia.</td>
                     </tr>
                     <tr>
-                        <td class="firstVerticalRow">Comportamiento/ <br> Carácter</td>
+                        <td class="grid-firstVerticalRow">Comportamiento/ <br> Carácter</td>
                         <td>A desarrollar.<br> Pueden ser muy destructivos del ambiente y/o pertenencias personales.</td>
                         <td>Variable, si bien se pueden saber rasgos de su personalidad pueden ser capaces de adaptarse a un nuevo ambiente (sin cambiar del todo).</td>
                         <td>Totalmente definido. El adoptante debe ser capaz de respetar sus hábitos.</td>
                     </tr>
                     <tr>
-                        <td class="firstVerticalRow">Actividad</td>
+                        <td class="grid-firstVerticalRow">Actividad</td>
                         <td>Muy hiperactivos, necesitan mucho del juego.</td>
                         <td>Intermedio.</td>
                         <td>Poco activos, son los que más tiempo pasan durmiendo.</td>
                     </tr>
                     <tr>
-                        <td class="firstVerticalRow">Castración</td>
+                        <td class="grid-firstVerticalRow">Castración</td>
                         <td>Generalmente la castración queda a compromiso del adoptante.</td>
                         <td>Generalmente ya castrados.</td>
                         <td>Castrados.</td>
@@ -140,53 +141,53 @@
             </div>
         </section>
 
-        <!--CARRUSEL-->
-        
-        <h2>Testimonios de adoptantes</h2>
-        <section class="carrusel_container" id="carrusel_container">
-
-            
-            <div class="banner" id="banner">
-    
-                <!-- Use la imagen como imagen de fondo, pero también como hipervínculo-->
-                <a href="">
-                    <div class="banner-slide slide1 slide-active">
-                        <p class="banner__text">
-                            "Es el gato más gordo que he visto" <br>
-                            -Fernanda
-                        </p>
-                    </div>
-                    <!-- Qué div es actual, agregue slide-active a cual-->
-                </a>
-                <a href="">
-                    <div class="banner-slide slide2">
-                        <p class="banner__text">
-                            "Adopté a Luli, me sigue a todos lados.
-                            A la noche duerme en mi cama, con mi otro gato.
-                            Me levanto toda contracturada... no me arrepiento" <br>
-                             -Cynthia.
-                        </p>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="banner-slide slide3">
-                        <p class="banner__text">
-                            "Adopté a Chipi, se enfermó y gasté mis ahorros en veterinario.
-                            Siempre que llego al departamento me recibe, abro la puerta y está
-                            ahí detrás. <br>
-                            Es linda." <br>
-                             -Aimon.
-                        </p>
-                    </div>
-                </a>
-                <!-- Sobrescribir después de escribir-->
+        <section class="carrusel-container" id="carrusel_container">
+            <div class="carrusel-title">
+                <h2>Testimonios de adoptantes</h2>
             </div>
-
-            <!-- Navegación de puntos, haga clic para cambiar de imagen-->
-            <div class="dots" id="dots">
-                <span class="active"></span>
-                <span></span>
-                <span></span>
+            <div class="carrusel">
+                <div class="carrusel-banner" id="banner">
+        
+                    <!-- Use la imagen como imagen de fondo, pero también como hipervínculo-->
+                    <a href="">
+                        <div class="banner-slide slide1 slide-active">
+                            <p class="banner__text">
+                                "Es el gato más gordo que he visto" <br>
+                                -Fernanda
+                            </p>
+                        </div>
+                        <!-- Qué div es actual, agregue slide-active a cual-->
+                    </a>
+                    <a href="">
+                        <div class="banner-slide slide2">
+                            <p class="banner__text">
+                                "Adopté a Luli, me sigue a todos lados.
+                                A la noche duerme en mi cama, con mi otro gato.
+                                Me levanto toda contracturada... no me arrepiento" <br>
+                                 -Cynthia.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="banner-slide slide3">
+                            <p class="banner__text">
+                                "Adopté a Chipi, se enfermó y gasté mis ahorros en veterinario.
+                                Siempre que llego al departamento me recibe, abro la puerta y está
+                                ahí detrás. <br>
+                                Es linda." <br>
+                                 -Aimon.
+                            </p>
+                        </div>
+                    </a>
+                    <!-- Sobrescribir después de escribir-->
+                </div>
+    
+                <!-- Navegación de puntos, haga clic para cambiar de imagen-->
+                <div class="dots" id="dots">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
         </section>

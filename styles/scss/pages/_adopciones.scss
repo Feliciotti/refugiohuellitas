@@ -1,11 +1,21 @@
-#adoptaSection2 {
-    grid-area: section2;
+.adopciones-title{
+    margin-top: 50px;
+}
+
+#adoption-grid--container {
     display: grid;
     grid-template-columns: 1000px;
     grid-template-rows: 150px auto;
     justify-content: center;
-    margin-bottom: 20px;
     background-image: url(../contactbackground-min.png);
+
+    .adopciones-title--grid{
+        margin-top: 50px;
+
+        h2{
+            background: radial-gradient(circle, rgba(255,195,246,0.4822303921568627) 0%, rgba(255,195,246,0) 100%);
+        }
+    }
 
     div {
         h2{
@@ -13,7 +23,7 @@
         }
     }
 
-    .section2__table{
+    .adoption-grid{
         height: 700px;
         width: auto;
         margin-top: 40px;
@@ -24,8 +34,6 @@
             border: 2px solid  $red;
             background-color: white;
         }
-
-
         th {
             background-color: $light-pink;
             font-family: $title;
@@ -33,15 +41,13 @@
             color: $brown;
             padding: 30px;
         }
-
-        .firstVerticalRow {
+        .grid-firstVerticalRow {
             background-color: $light-pink;
             font-family: $title;
             font-size: 200%;
             font-weight: bold;
             color: $brown;
         }
-        
         td {
             font-family: $text;
             font-size: 130%;
@@ -53,78 +59,82 @@
 
 }
 
-.carrusel_container{
-    width: 1200px;
-    height: 460px;
-    margin: 30px auto;
-    overflow: hidden;//Ocultar fuera de rango
-    position: relative;
-
-    .banner{
+.carrusel-container{
+    padding: 50px;
+    .carrusel{
         width: 1200px;
         height: 460px;
+        margin: 30px auto;
+        overflow: hidden;//Ocultar fuera de rango
         position: relative;
-        overflow: hidden;
-
-        .banner-slide{
+        padding: 50px;
+    
+        .carrusel-banner{
             width: 1200px;
             height: 460px;
-            position: absolute;
+            position: relative;
+            overflow: hidden;
+    
+            .banner-slide{
+                width: 1200px;
+                height: 460px;
+                position: absolute;
+                
+                .banner__text {
+                    margin: 30px auto auto 200px;
+                    width: 500px;
+                    color: $red;
+                    font-family: $title;
+                    font-size: 35px;
+                }
+            }
+    
+            .slide-active{
+                display: block;
+            }
             
-            .banner__text {
-                margin: 30px auto auto 200px;
-                width: 500px;
-                color: $red;
-                font-family: $title;
-                font-size: 35px;
+            .slide1 {
+                background: url("../test1.png");
+            }
+            .slide2{
+                background: url("../test2.png");
+    
+            }
+            .slide3{
+                background: url("../test3.png");
+    
+            }
+    
+            .slide1, .slide2, .slide3{
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: 35%;
+                background-position-x: 85%;
             }
         }
-
-        .slide-active{
-            display: block;
-        }
-        
-        .slide1 {
-            background: url("../test1.png");
-        }
-        .slide2{
-            background: url("../test2.png");
-
-        }
-        .slide3{
-            background: url("../test3.png");
-
-        }
-
-        .slide1, .slide2, .slide3{
-            background-repeat: no-repeat;
-            background-position: right;
-            background-size: 35%;
-            background-position-x: 85%;
-        }
-    }
-
-    .dots{
-        position: absolute;
-        right: 20px;//A la derecha * /
-        bottom: 24px;
-        text-align: right;
-
-        span{
-            display: inline-block;//Aparece en una línea * /
-            width: 12px;
-            height: 12px;
-            border-radius: 50px;
-            background-color: #ffcc74de;//Establecer transparencia al mismo tiempo * /
-            margin-right: 8px;
-            line-height: 12px;
-            box-shadow: 0 0 0 2px #ffcd74 inset;//Agregar recuadro blanco: sombra interna * /
-            cursor: pointer;
-        }
-
-        .active{
-            box-shadow: 0 0 0 2px rgba(27, 23, 7, 0.253) inset;//El color de fondo actual es blanco * /
-            background: #d67b60;
+    
+        .dots{
+            position: absolute;
+            right: 20px;//A la derecha * /
+            bottom: 24px;
+            text-align: right;
+    
+            span{
+                display: inline-block;//Aparece en una línea * /
+                width: 12px;
+                height: 12px;
+                border-radius: 50px;
+                background-color: #ffcc74de;//Establecer transparencia al mismo tiempo * /
+                margin-right: 8px;
+                line-height: 12px;
+                box-shadow: 0 0 0 2px #ffcd74 inset;//Agregar recuadro blanco: sombra interna * /
+                cursor: pointer;
+            }
+    
+            .active{
+                box-shadow: 0 0 0 2px rgba(27, 23, 7, 0.253) inset;//El color de fondo actual es blanco * /
+                background: #d67b60;
+            }
         }
     }
 }

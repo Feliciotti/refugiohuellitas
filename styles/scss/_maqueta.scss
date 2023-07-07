@@ -37,7 +37,7 @@
     }
 
     .container_local {
-        width: ($width/4)-30px;
+        width: calc($width/4)-30px;
     }
 
 }
@@ -55,7 +55,7 @@
     }
 
     .container_local {
-        width: ($width/3)-40px;
+        width: calc($width/3)-40px;
     }
 }
 

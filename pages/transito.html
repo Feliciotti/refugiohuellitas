@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../styles/css/styles.css">
+    <link rel="stylesheet" href="../styles/css/main.css">
 
     <!-- favicon -->
     <link rel="icon" href="../img/favicon-min.png">
@@ -25,15 +25,15 @@
 </head>
 <body>
     <div class="body">
-        <!--HEADER-->
-        <header class="main-header">
+
+        <header class="header">
             <!--LOGO-->
             <div>
                 <a href="../index.html">
                     <img class="logo" src="../img/logo-min.png" alt="Logo del Refugio">
                 </a>
             </div>
-            <!-- NAV BAR -->
+
             <nav>
                 <input type="checkbox" class="menu-btn" id="menu-btn">
                 <label for="menu-btn" class="menu-icon">
@@ -41,7 +41,7 @@
                 </label>
 
                 <ul class="nav-links">
-                    <li class="nav__link"><a href="../pages/el-refugio.html">Nosotros</a></li>
+                    <li class="nav__link"><a href="../pages/nosotros.html">Nosotros</a></li>
                     <li class="nav__link"><a href="../pages/adopta.html">Adoptá!</a></li>
                     <li class="nav__link"><a href="../pages/transito.html">Tránsito</a></li>
                     <li class="nav__link"><a href="../pages/donaciones.html">Donaciones</a></li>
@@ -51,40 +51,42 @@
         </header>
 
         <!-- BANNER -->
-        <main class="mainWrap">
-            <div class="main__container ">
-                <h1>Tránsito</h1>
-                <img class="main__img main-img--donations" src="../img/transito-min.png" alt="Banner-Image">
+        <main class="hero-container">
+            <div class="hero">
+                <h1 class="hero--title">Tránsito</h1>
+                <img class="hero--img main-img--donations" src="../img/transito-min.png" alt="Banner-Image">
             </div>
         </main>
         
-        <section class="article">
-            <article>
-                <h2>¿Qué es un horgar de tránsito?</h2>
-                <p>Bien como su nombre lo dice, un hogar de tránsito es un hogar donde los
-                    gatitos paran <strong>transitoriamente</strong>. Pueden estar unos meses,
-                    unas semanas, o indefinidamente hasta que consigan adoptante.
-                    Los hogares de tránsito nos son de gran ayuda, ya que representan espacio
-                    disponible para seguir rescatando animales hasta que los ubiquemos definidamente.
-                </p>
+        <section class="info">
+            <article class="info-article">
+                <div>
+                    <h2>¿Qué es un horgar de tránsito?</h2>
+                    <p>Bien como su nombre lo dice, un hogar de tránsito es un hogar donde los
+                        gatitos paran <strong>transitoriamente</strong>. Pueden estar unos meses,
+                        unas semanas, o indefinidamente hasta que consigan adoptante.
+                        Los hogares de tránsito nos son de gran ayuda, ya que representan espacio
+                        disponible para seguir rescatando animales hasta que los ubiquemos definidamente.
+                    </p>
+                </div>
+                <div class="article-imgContainer">
+                    <img class="article-img" src="../img/transito-hogar-min.png" alt="Imagen temporaria">
+                </div>
             </article>
-            <div class="cat_container">
-                <img class="cat__img" src="../img/transito-hogar-min.png" alt="Imagen temporaria">
-            </div>
-            <div class="cat_container">
-                <img class="cat__img catImg--2" src="../img/transito-puedo-min.png" alt="Imagen temporaria">
-            </div>
-            <article>
-                <h2>¿Puedo ser hogar de tránsito?</h2>
-                <p>Si te interesa ayudar, podés <a href="../pages/contacto.html"><strong>contactarte con nosotros</strong></a>
-                    para que te enviemos los requisitos para convertirte en hogar de tránsito. Te adelantamos
-                    que debes estar dispuesto a que hagamos una inspección en tu casa para determinar si es 
-                    apta, y los tiempos de tránsito de los animales por su puesto serán definidos por vos.
-                </p>
+
+            <article class="info-article info-article--2">
+                <div class="article-imgContainer">
+                    <img class="article-img" src="../img/transito-puedo-min.png" alt="Imagen temporaria">
+                </div>
+                <div>
+                    <h2>¿Puedo ser hogar de tránsito?</h2>
+                    <p>Si te interesa ayudar, podés <a href="../pages/contacto.html"><strong>contactarte con nosotros</strong></a>
+                        para que te enviemos los requisitos para convertirte en hogar de tránsito. Te adelantamos
+                        que debes estar dispuesto a que hagamos una inspección en tu casa para determinar si es 
+                        apta, y los tiempos de tránsito de los animales por su puesto serán definidos por vos.
+                    </p>
+                </div>
             </article>
-            <div class="cat_container">
-                <img class="cat__img catImg--3" src="../img/transito-puedo-min.png" alt="Imagen temporaria">
-            </div>
         </section>
 
         <!--FOOTER-->

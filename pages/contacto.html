@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../styles/css/styles.css">
+    <link rel="stylesheet" href="../styles/css/main.css">
     
     <!-- favicon -->
     <link rel="icon" href="../img/favicon-min.png">
@@ -26,15 +26,14 @@
 </head>
 <body>
     <div class="body">
-        <!--HEADER-->
-        <header class="main-header">
+        <header class="header">
             <!--LOGO-->
             <div>
                 <a href="../index.html">
                     <img class="logo" src="../img/logo-min.png" alt="Logo del Refugio">
                 </a>
             </div>
-            <!-- NAV BAR -->
+
             <nav>
                 <input type="checkbox" class="menu-btn" id="menu-btn">
                 <label for="menu-btn" class="menu-icon">
@@ -42,7 +41,7 @@
                 </label>
 
                 <ul class="nav-links">
-                    <li class="nav__link"><a href="../pages/el-refugio.html">Nosotros</a></li>
+                    <li class="nav__link"><a href="../pages/nosotros.html">Nosotros</a></li>
                     <li class="nav__link"><a href="../pages/adopta.html">Adoptá!</a></li>
                     <li class="nav__link"><a href="../pages/transito.html">Tránsito</a></li>
                     <li class="nav__link"><a href="../pages/donaciones.html">Donaciones</a></li>
@@ -51,40 +50,30 @@
             </nav>
         </header>
 
-        <!-- BANNER -->
-        <main class="mainWrap">
-            <div class="main__container">
-                <h1 class="main--title mainTitle--contact">Envianos tu consulta</h1>
-                <div class="main__imgContainer">
-                    <img class="main__img mainImg--cats contact--catLetter" src="../img/contactoII-min.png" alt="Banner-Contacto">
-                    <img class="main__img mainImg--cats mainImg--Contact" src="../img/contacto-min.png" alt="Banner-Contacto">
+        <!-- hero -->
+        <main class="hero-container">
+            <div class="hero">
+                <h1 class="hero--title hero--title-contact">Envianos tu consulta</h1>
+                <div class="hero--img-container">
+                    <!-- <img class="hero--img mainImg--cats contact--catLetter" src="../img/contactoII-min.png" alt="Banner-Contacto">
+                    <img class="hero--img mainImg--cats mainImg--Contact" src="../img/contacto-min.png" alt="Banner-Contacto"> -->
                 </div>
             </div>
         </main>
 
         <!--FORMULARIO-->
-        <section id="contactoSection">
-            <!--DATOS DE LA PERSONA-->
+        <section id="contactForm-container">
             <form id="form" action="">
-                <div class="form__container">
-
-                        <label class="personData" for="name">Nombre</label>
-                        <input type="text" name="name" id="name">
-                        <div id="msj1" class="msj">El nombre es requerido</div>
-
-
-                        <label class="personData" for="surname">Apellido</label>
-                        <input type="text" name="surname" id="surname">
-                        <div id="msj2" class="msj">El apellido es requerido</div>
-
-
-                        <label class="personData" for="email">e-mail</label>
-                        <input type="email" name="email" id="email">
-                        <div id="msj3" class="msj">El e-mail es requerido</div>
-
-                    <div class="form__select">
-                        <label class="personData" for="localidad">Localidad</label>
-                        <select class="select" name="localidad" required>
+                <!--DATOS DE LA PERSONA-->
+                <div class="form-inputsContainer">
+                    <div class="inputs-userdata">
+                        <input type="text" name="name" id="name" placeholder="nombre" required>
+                        <input type="text" name="surname" id="surname" placeholder="apellido" required>
+                        <input type="email" name="email" id="email" placeholder="e-mail" required>
+                    </div>
+                    <div class="inputs-userdata">
+                        <label class="input-location" for="localidad">Localidad:</label>
+                        <select class="location-select" name="localidad" required>
                             <option value="TMP">Temperley</option>
                             <option value="LDZ">Lomas de Zamora</option>
                             <option value="LNS">Lanús</option>
@@ -93,24 +82,32 @@
                     </div>
                 </div>
                 <!--MOTIVO DE CONTACTO-->
-                <div class="form__container">
-                    <p class="formTitle">Motivo</p>
-                    <input type="radio" name="motivo" value="Adoptar">
-                    <label class="reason" for="Adopciones">Quiero adoptar</label> <br>
+                <div class="form-inputsContainer">
+                    <p class="form-title">Motivo</p>
+                    <div>
+                        <input type="radio" name="motivo" value="adoptar">
+                        <label for="Adopciones">Quiero adoptar</label>
+                    </div>
 
-                    <input type="radio" name="motivo" value="TRÁNSITO">
-                    <label class="reason" for="Transitos">Quiero dar tránsito</label> <br>
+                    <div>
+                        <input type="radio" name="motivo" value="transitar">
+                        <label for="Transitos">Quiero dar tránsito</label>
+                    </div>
 
-                    <input type="radio" name="motivo" value="INFO">
-                    <label class="reason" for="Info">Información</label> <br>
+                    <div>
+                        <input type="radio" name="motivo" value="info">
+                        <label for="Info">Información</label>
+                    </div>
 
-                    <input type="radio" name="motivo" value="OTRO">
-                    <label class="reason" for="Otro">Otro</label>
+                    <div>
+                        <input type="radio" name="motivo" value="otro">
+                        <label for="Otro">Otro</label>
+                    </div>
                 </div>
 
                 <!--MENSAJE-->
-                <div class="form__container">
-                    <p class="formTitle">Mensaje</p>
+                <div class="form-inputsContainer">
+                    <p class="form-title">Mensaje</p>
                     <textarea name="comentarios" cols="50" rows="10" placeholder="Comentarios" maxlength="300"></textarea>
                 </div>
 

@@ -1,5 +1,5 @@
 //NAvbar
-const header = document.querySelector('.main-header');
+const header = document.querySelector('.header');
 window.addEventListener('scroll', () =>{
     const scrollPos = window.scrollY;
     if(scrollPos > 10){
@@ -13,23 +13,28 @@ window.addEventListener('scroll', () =>{
 
 function byId(id) {
 
-   return  typeof id==="string"?document.getElementById(id):id;
+   return typeof id==="string"?document.getElementById(id):id;
 }
 
-var index=0,timer=null,banner=byId("banner").getElementsByTagName("div"),len=banner.length,dots=byId("dots").getElementsByTagName("span");
+let index=0
+    timer=null,
+    banner=byId("banner").getElementsByTagName("div"),
+    len=banner.length,
+    dots=byId("dots").getElementsByTagName("span");
 
 
 function slideImg() {
 
-    var container=byId("carrusel_container");
+    let container = byId("carrusel_container");
 
-    container.onmouseover=function () {
+    container.onmouseover = function () {
         if(timer){
             clearInterval(timer);
         }
     }
-    container.onmouseout=function () {
-        timer=setInterval(function () {
+    container.onmouseout = function () {
+
+        timer = setInterval(function () {
             index++;
 
             if(index>=len){
@@ -42,8 +47,9 @@ function slideImg() {
 
     container.onmouseout();
 
-    for(var d=0;d<len;d++){
-        dots[d].id=d;
+    for(let d = 0; d < len ; d++){
+        
+        dots[d].id = d;
 
         dots[d].onclick=function () {
             index=this.id;
@@ -56,7 +62,7 @@ function slideImg() {
 
 function changeImg() {
 
-    for(var i=0;i<len;i++){
+    for(let i=0; i<len; i++){
         banner[i].style.display='none';
         dots[i].className="";
     };

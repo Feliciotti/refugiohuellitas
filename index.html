@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--CSS-->
-    <link rel="stylesheet" href="styles/css/styles.css">
+    <link rel="stylesheet" href="styles/css/main.css">
 
     <!-- favicon -->
     <link rel="icon" href="img/favicon-min.png">
@@ -27,8 +27,8 @@
 </head>
 <body>
     <div class="body">
-        <!-- HEADER -->
-        <header class="main-header">
+
+        <header class="header">
             <!--LOGO-->
             <div>
                 <a href="index.html">
@@ -44,7 +44,7 @@
                 </label>
 
                 <ul class="nav-links">
-                    <li class="nav__link"><a href="pages/el-refugio.html">Nosotros</a></li>
+                    <li class="nav__link"><a href="pages/nosotros.html">Nosotros</a></li>
                     <li class="nav__link"><a href="pages/adopta.html">Adoptá!</a></li>
                     <li class="nav__link"><a href="pages/transito.html">Tránsito</a></li>
                     <li class="nav__link"><a href="pages/donaciones.html">Donaciones</a></li>
@@ -53,39 +53,38 @@
             </nav>
         </header>
 
-        <!--IMAGEN PRINCIPAL-->
-        <main class="mainWrap">
-            <div class="main__container">
-                <img class="main__img" src="img/caja-min.png" alt="Ilustración de cabecera">
+        <!-- hero -->
+        <main class="hero-container">
+            <div class="hero">
+                <img class="hero--img" src="img/caja-min.png" alt="Kittens box">
             </div>
         </main>
 
-        <!--Contenido-->
-        <section class="steps">
-                <div class="step">
-                    <img class="step__img" src="img/rescate-min.png" alt="Ilustración representativa del rescate de animales">
+        <section class="row">
+                <div class="row-imgContainer">
+                    <img class="row-img" src="img/rescate-min.png" alt="Etapa de rescate">
                 </div>
                 
-                <div class="step">
-                    <img class="step__img" src="img/rehabilitacion-min.png" alt="Ilustración representativa del proceso de curación">
+                <div class="row-imgContainer">
+                    <img class="row-img" src="img/rehabilitacion-min.png" alt="Etapa de rescate curación">
                 </div>
 
-                <div class="step">
-                    <img class="step__img" src="img/hogar-min.png" alt="Ilustración representativa de la adopción de animales">
+                <div class="row-imgContainer">
+                    <img class="row-img" src="img/hogar-min.png" alt="Etapa de adopción">
                 </div>
         </section>
 
-        <!--INGRESOS-->
-        <section class="rescues">
-            <h2 class="rescues--title">Rescates Recientes</h2>
-            <div class="rescues__article-container">
-                <article class="rescues__article">
-                    <img class="rescues__img" src="img/naranja-min.png" alt="Nuevo ingreso al refugio">
+        <!-- blog -->
+        <section class="blog-container">
+            <h2 class="blog--title">Nuevos ingresos</h2>
+            <div class="blog">
+                <article class="blog--entry">
+                    <img class="entry-img" src="img/naranja-min.png" alt="Nuevo ingreso al refugio">
                     <div>
-                        <div class="rescues__articleTitleContainer">
-                            <h3 class="rescues--article-title">Garfield</h3>
+                        <div class="entry-titleContainer">
+                            <h3 class="entry-title">Garfield</h3>
                         </div>
-                        <p class="rescues__p"><strong>22/08/2021</strong> Garfiel es un machito de 5 meses que una chica
+                        <p class="entry-info"><strong>22/08/2021</strong> Garfiel es un machito de 5 meses que una chica
                             encontró en la estación de Lomas y como no podía quedarselo nos lo trajo.
                             Ya tiene sus vacunas, está desparacitado, despulgado y a espera de un hogar...</p>
                         </div>
@@ -94,13 +93,13 @@
                         </a>
                 </article>
 
-                <article class="rescues__article">
-                    <img class="rescues__img" src="img/gris-min.png" alt="Nuevo ingreso al refugio">
+                <article class="blog--entry">
+                    <img class="entry-img" src="img/gris-min.png" alt="Nuevo ingreso al refugio">
                     <div>
-                        <div class="rescues__articleTitleContainer">
-                            <h3 class="rescues--article-title">Alemania</h3>
+                        <div class="entry-titleContainer">
+                            <h3 class="entry-title">Alemania</h3>
                         </div>
-                        <p class="rescues__p"><strong>18/08/2021</strong> Alemania es una gata de avanzada edad, cuyo dueño falleció
+                        <p class="entry-info"><strong>18/08/2021</strong> Alemania es una gata de avanzada edad, cuyo dueño falleció
                             y la familia de este la abandonó. Es muy amistosa pero no se lleva con otros gatos...
                         </p>
                         </div>
@@ -109,13 +108,13 @@
                         </a>
                 </article>
 
-                <article class="rescues__article">
-                    <img class="rescues__img" src="img/tricolor-min.png" alt="Nuevo ingreso al refugio">
+                <article class="blog--entry">
+                    <img class="entry-img" src="img/tricolor-min.png" alt="Nuevo ingreso al refugio">
                     <div>
-                        <div class="rescues__articleTitleContainer">
-                            <h3 class="rescues--article-title">Cleo</h3>
+                        <div class="entry-titleContainer">
+                            <h3 class="entry-title">Cleo</h3>
                         </div>
-                        <p class="rescues__p"><strong>26/08/2021</strong> Cleo es una gatita joven y tiene un
+                        <p class="entry-info"><strong>26/08/2021</strong> Cleo es una gatita joven y tiene un
                         embarazo avanzado, se necesita con urgencia hogar de tránsito donde pueda estar
                         contenida y alejada de otros animales... </p>
                         </div>
@@ -124,13 +123,13 @@
                         </a>
                 </article>
 
-                <article class="rescues__article">
-                    <img class="rescues__img" src="img/gatitos-min.png" alt="Nuevo ingreso al refugio">
+                <article class="blog--entry">
+                    <img class="entry-img" src="img/gatitos-min.png" alt="Nuevo ingreso al refugio">
                     <div>
-                        <div class="rescues__articleTitleContainer">
-                            <h3 class="rescues--article-title">Tinta, África y Pepper</h3>
+                        <div class="entry-titleContainer">
+                            <h3 class="entry-title">Tinta, África y Pepper</h3>
                         </div>
-                        <p class="rescues__p"><strong>22/08/2021</strong> Camada de tres gatitos negros de 2
+                        <p class="entry-info"><strong>22/08/2021</strong> Camada de tres gatitos negros de 2
                         meses de edad, se busca adoptante responsable. Actualmente están en hogar de tránsito
                         en Temperley...</p>
                         </div>

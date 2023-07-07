@@ -1,19 +1,12 @@
-@import "variables";
-@import "maqueta";
-@import "generales";
-@import "header";
-@import "banner";
-// INDEX
-@import "index-steps";
-@import "index-content";
-// ARTICLES
-@import "el-refugio";
-// ADOPCIONES
-@import "adopciones";
-// DONACIONES
-@import "donaciones";
-// CONTACTO
-@import "contacto";
+@import "vars";
 
-@import "404";
+
+@import "maqueta";
+@import "fonts";
+@import "header";
+@import "hero";
+
 @import "footer";
+
+// INDEX
+@import "pages";

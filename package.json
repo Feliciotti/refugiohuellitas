@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Feliciotti/proyecto_coder#readme",
   "devDependencies": {
-    "nodemon": "^2.0.20",
-    "sass": "^1.55.0"
+    "nodemon": "^1.14.9",
+    "sass": "^1.63.6"
   }
 }

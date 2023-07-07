@@ -1,5 +1,5 @@
 /* ------------- BANNER ------------- */
-.mainWrap {
+.hero-container {
     grid-area: main;
     @include center;
     height: 100vh;
@@ -8,18 +8,7 @@
     background-position: center center;
     background-size: cover;
 
-    .mainContainer--nosotros{
-        position: absolute;
-        @include center;
-        align-self: center;
-
-        .main-img--nosotros {
-            width: 50%;
-        }
-
-    }
-
-    .main__container {
+    .hero {
         position: absolute;
         @include center;
         align-self: center;
@@ -28,25 +17,20 @@
             position: absolute;
             left: 20%;
         }
-
         .mainTitle--contact {
             position: absolute;
             top: -15%
         }
-        
-
-        .main__img {
+        .hero--img {
             width: 70%;
             height: auto;
             animation-name: aparecer;
             animation-duration: 2s;
         }
-
         .main-img--donations {
             width: 40%
         }
-
-        .main__imgContainer{
+        .hero-imgContainer{
             @include center;
             width: auto;
             
@@ -68,19 +52,8 @@
 
 @media only screen and (max-width: 1200px) {
 
-    .mainWrap {
-
-        .mainContainer--nosotros{
-            flex-direction: column;
-            align-items: center;
-    
-            .main-img--nosotros {
-                width: 100%;
-            }
-    
-        }
-
-        .main__container {
+    .hero-container {
+        .hero {
             flex-direction: column;
             align-items: center;
 
@@ -88,89 +61,45 @@
                 position: absolute;
                 left: auto;
             }
-
-            .main__img {
+            .hero--img {
                 height: auto;
                 margin-top: 100px;
             }
-
-            .main__imgContainer{
-            
-                .mainImg--Contact{
-                    margin-left: 0;
-                }
-
-                .contact--catLetter{
-                    display: none;
-                }
-            }
-
         }
-
     }
-
 }
     
 @media only screen and (max-width: 360px) {
 
-    .mainWrap {
-
-        .main__container {
-
-            .main__imgContainer{
-
-                .main__img {
+    .hero-container {
+        .hero {
+            .hero-imgContainer{
+                .hero--img {
                     width: 70%;
                 }
-
             }
-
             .main--title {
                 top: -30%;
             }
-
             .mainTitle--contact{
                 top: -5%;
             }
-
-            .main__img {
+            .hero--img {
                 width: 90%;
             }
-
         }
-
     }
-
 }
 
 @media only screen and (min-width: 361px) and (max-width: 540px) {
 
-    .mainWrap {
-
-        .main__container {
-
-            .main--title {
-                position: absolute;
-                left: auto;
-                top: -20%;
-            }
-
-            .main--title {
-                top: -5%;
-            }
-
-            .main__img {
-                width: 90%;
-            }
-
-            .main__imgContainer{
-
-                .main__img {
+    .hero-container {
+        .hero {
+            .hero-imgContainer{
+                .hero--img {
                     width: 70%;
                 }
-
             }
-
         }
 
     }
@@ -179,35 +108,29 @@
 
 @media only screen and (min-width: 541px) and (max-width: 700px) {
 
-    .mainWrap {
-
-        .main__container {
+    .hero-container {
+        .hero {
 
             .main--title {
                 top: -20%;
             }
 
-            .main__img {
+            .hero--img {
                 width: 60%;
             }
-
         }
-
     }
-
 }
 
 @media only screen and (min-width: 701px) and (max-width: 1024px) {
 
-    .mainWrap {
-
-        .main__container {
-
+    .hero-container {
+        .hero {
             .main--title {
                 top: -10%;
             }
 
-            .main__img {
+            .hero--img {
                 width: 90%;
             }
 
@@ -215,56 +138,41 @@
                 top: -10%;
             }
 
-            .main__imgContainer{
+            .hero-imgContainer{
 
-                .main__img {
+                .hero--img {
                     width: 100%;
                 }
-
             }
-
         }
-
     }
-
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1920px){
 
-    .mainWrap {
-
+    .hero-container {
         .mainContainer--nosotros{
-    
             .main-img--nosotros {
                 width: 100%;
             }
-    
         }
 
-        .main__container {
-
+        .hero {
             .mainTitle--contact {
                 position: absolute;
                 top: -5%;
             }
-
-            .main__img {
+            .hero--img {
                 width: 100%;
             }
-
-            .main__imgContainer{
-            
+            .hero-imgContainer{
                 .mainImg--Contact{
                     margin-left: 500px;
                 }
-    
                 .mainImg--cats {
                     width: 100%;
                 }
             }
         }
-
-
     }
-
 }
