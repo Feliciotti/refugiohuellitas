@@ -1,3 +1,7 @@
+input, .input-location, .location-select, .form-title, label{
+    color: $brown;
+    text-align: center;
+}
 #contactForm-container {
     grid-area: section1;
     @include center;
@@ -8,11 +12,10 @@
         background-color: rgb(255, 255, 255);
         border: 10px groove #dd2451;
         color: $brown;
-
         @include column-center;
         margin-top: 100px;
         margin-bottom: 100px;
-        width: auto;
+        width: 550px;
         height: auto;
         padding: 50px 60px;
 
@@ -25,9 +28,7 @@
 
                 input, .input-location, .location-select{
                     font-family: $title;
-                    color: $brown;
                     font-size: 200%;
-                    text-align: center;
                 }
 
                 input{
@@ -57,30 +58,32 @@
 
             .form-title {
                 font-family: $title;
-                color: $brown;
                 font-size: 200%;
                 font-weight: bold;
                 margin: 0;
-                text-align: center;
             }
-
+            label{
+                font-family: $text;
+                font-size: 20px;
+            }
             textarea {
                 border: groove 5px $red;
                 width: 250px;
-                height: 50%;
+                height: auto;
                 padding: 10px;
                 outline: 0;
             }
         }
 
-        .form__btncontainer{
+        .form-bttncontainer{
             @include center;
 
-            .btn--form {
+            .form-bttn {
                 @include btn;
                 font-family: $title;
                 color: $brown;
-                font-size: 30px;
+                font-size: 25px;
+                font-weight: bold;
 
                 &:first-child {
                     margin-right: 20px;
@@ -105,99 +108,60 @@
             padding: 50px 20px;
             border: 4px groove $red;
             width: 300px;
-            
+
             .form-inputsContainer{
                 .inputs-userdata input{
                     width: 200px;
                     font-size: 150%;
                 }
-                    
                 textarea {
                     border: groove 2px $red;
-                    width: 230px;
-                    height: 50%;
-                    padding: 10px;
-                    outline: 0;
+                    width: 220px;
                 }
             }
-
-            .form__btncontainer {
-                margin-bottom: 20px;
-
-                .btn--form {
-                    font-size: 20px;
-                    font-weight: bold;
-                }
-            }
-
         }
     }
 }
 
-
 @media only screen and (min-width: 361px) and (max-width: 540px) {
-
-    #contactoSection {
-        form {
-            padding: 15px 10px;
+    #contactForm-container {
+        #form {
+            padding: 50px 0;
             border: 5px groove $red;
 
-            .form__container {
-                padding-bottom: 20px;
-
-
-                .form__select {
-                    @include center;
-            
-                    select {
-                        align-self: center;
-                    }
-                }
+            .form-inputsContainer {
     
                 textarea {
                     border: groove 4px $red;
                     width: 250px;
-                    height: 50%;
                     padding: 10px;
-                    outline: 0;
                 }
             }
 
             .form__btncontainer {
-                margin-bottom: 20px;
-
                 .btn--form {
                     font-size: 20px;
-                    font-weight: bold;
                 }
             }
-
         }
     }
-
 }
 
 @media only screen and (min-width: 541px) and (max-width: 768px) {
 
-    #contactoSection {
-        form {
+    #contactForm-container {
+        #form {
             padding: 30px 40px;
             .form__container {
-    
                 textarea {
                     width: 250px;
-                    height: 50%;
                     padding: 10px;
-                    outline: 0;
                 }
             }
 
             .form__btncontainer {
-                margin-bottom: 20px;
-
                 .btn--form {
                     font-size: 30px;
-                    font-weight: bold;
                 }
             }
 

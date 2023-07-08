@@ -1,18 +1,13 @@
-.donacionesSection {
+.donaciones-body {
     grid-area: section1;
-    @include center;
-    flex-direction: column;
+    @include column-center;
     background-image: url(../contactbackground-min.png);
     background-repeat: repeat;
 
-    .donaciones__article {
-        width: auto;
+    .donaciones-content {
+        @include column-center;
         background-color: $light-pink;
-        width: auto;
-        margin: auto;
-        @include center;
-        flex-direction: column;
-        padding: 100px 0;
+        padding: 100px 15px;
 
         .donaciones__paymethod {
             display: grid;
@@ -25,32 +20,23 @@
             &:nth-child(n+3) {
                 margin-top: 70px;
             }
-            
             .donaciones__logocontainer{
-
+                height: fit-content;
                 .pagos--local {
                     height: 150px;
                 }
-
                 .pagosLogo {
                     width: 170px;
                 }
             }
         }
-
     }
-
-
-
 }
 
 // MEDIA QUERIES -------------------------
-
 @media only screen and (max-width: 768px) {
-
-    .donacionesSection {
-    
-        .donaciones__article {
+    .donaciones-body {
+        .donaciones-content {
             display: flex;
             flex-direction: column;
     
@@ -62,12 +48,8 @@
     
                 &:nth-child(n+3) {
                     margin-top: 70px;
-                }
-                
+                } 
             }
-    
         }
-    
     }
-
 }
