@@ -1,5 +1,3 @@
-/* ------------- INDEX row ------------- */
-
 .row {
     grid-area: section1;
     background-color: $brown;
@@ -25,8 +23,6 @@
     }
 }
 
-/* ------------- BLOG ------------- */
-
 .blog-container {
     grid-area: section2;
     margin-bottom: 100px;
@@ -34,7 +30,6 @@
     .blog--title {
         padding: 50px;
     }
-
     .blog {
         display: grid;
         justify-content: center;
@@ -57,7 +52,6 @@
                     transform: scale(1.2,1.2);
                 }
             }
-
             .entry-titleContainer {
                 position: relative;
                 margin-top: -60px;
@@ -69,13 +63,11 @@
                     margin-bottom: 0;
                 }
             }
-
             .entry-info {
                 background-color: white;
                 padding: 10px;
                 position: relative;
             }
-
             .btn {
                 @include btn;
 
@@ -84,7 +76,6 @@
                     font-weight: bold;
                 }
             }
-
             .btn--absolute {
                 position: absolute;
                 top: 10px;
@@ -105,7 +96,7 @@
 
             &:nth-child(-n+2) {
                 margin-bottom: 40px;
-                }
+            }
         }
     }
 
@@ -113,7 +104,6 @@
         .blog--title {
             font-size: 300%;
         }
-
         .blog {
             display: grid;
             justify-items: center;
@@ -134,11 +124,9 @@
 
         }    
     }
-
 }
 
 @media only screen and (min-width: 361px) and (max-width: 540px) {
-
     .row {
         background-color: $pink;
         @include center;

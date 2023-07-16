@@ -1,3 +1,12 @@
+/* ------------- KEYFRAMES ------------- */
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .btn--first {
   background-color: #fff4db;
 }
@@ -109,7 +118,7 @@ h1, h2, h3, h4 {
 
 h1 {
   animation-name: aparecer;
-  animation-duration: 2s;
+  animation-duration: 1s;
   font-size: 11em;
 }
 
@@ -137,18 +146,9 @@ p {
   height: 15px;
   background-color: rgba(0, 0, 0, 0.116);
   border-radius: 50%;
-  margin: 5px auto 100px auto;
+  margin: 5px auto;
 }
 
-/* ------------- KEYFRAMES ------------- */
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
 /* ------------- MEDIA QUERIES ------------- */
 @media only screen and (max-width: 360px) {
   h1 {
@@ -319,59 +319,39 @@ header.scrolled {
   display: flex;
   justify-content: center;
   align-self: center;
+  width: fit-content;
 }
-.hero-container .hero .main--title {
+.hero-container .hero .hero--title {
   position: absolute;
-  left: 20%;
 }
-.hero-container .hero .mainTitle--contact {
-  position: absolute;
-  top: -15%;
+.hero-container .hero .title--transito {
+  right: 100px;
+}
+.hero-container .hero .title--donaciones {
+  left: -200px;
+  bottom: 270px;
+}
+.hero-container .hero .hero--img-container {
+  display: grid;
+  grid-template-columns: 70% auto;
+  align-items: center;
+  justify-content: center;
+}
+.hero-container .hero .hero--img-container .hero--contactoImg1 {
+  width: 80%;
 }
 .hero-container .hero .hero--img {
-  width: 70%;
-  height: auto;
+  width: 100%;
   animation-name: aparecer;
-  animation-duration: 2s;
-}
-.hero-container .hero .main-img--donations {
-  width: 40%;
-}
-.hero-container .hero .hero-imgContainer {
-  display: flex;
-  justify-content: center;
-  width: auto;
-}
-.hero-container .hero .hero-imgContainer .mainImg--Contact {
-  margin-left: 300px;
-}
-.hero-container .hero .hero-imgContainer .mainImg--cats {
-  width: 25%;
+  animation-duration: 1s;
 }
 
-@media only screen and (max-width: 1200px) {
-  .hero-container .hero {
-    flex-direction: column;
-    align-items: center;
-  }
-  .hero-container .hero .main--title {
-    position: absolute;
-    left: auto;
-  }
-  .hero-container .hero .hero--img {
-    height: auto;
-    margin-top: 100px;
-  }
-}
 @media only screen and (max-width: 360px) {
   .hero-container .hero .hero-imgContainer .hero--img {
     width: 70%;
   }
   .hero-container .hero .main--title {
     top: -30%;
-  }
-  .hero-container .hero .mainTitle--contact {
-    top: -5%;
   }
   .hero-container .hero .hero--img {
     width: 90%;
@@ -401,24 +381,6 @@ header.scrolled {
     top: -10%;
   }
   .hero-container .hero .hero-imgContainer .hero--img {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 1400px) and (max-width: 1920px) {
-  .hero-container .mainContainer--nosotros .main-img--nosotros {
-    width: 100%;
-  }
-  .hero-container .hero .mainTitle--contact {
-    position: absolute;
-    top: -5%;
-  }
-  .hero-container .hero .hero--img {
-    width: 100%;
-  }
-  .hero-container .hero .hero-imgContainer .mainImg--Contact {
-    margin-left: 500px;
-  }
-  .hero-container .hero .hero-imgContainer .mainImg--cats {
     width: 100%;
   }
 }
@@ -945,61 +907,68 @@ input, .input-location, .location-select, .form-title, label {
     grid-column-gap: 50px;
   }
 }
-.donaciones-body {
+.donaciones {
   grid-area: section1;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
   background-image: url(../contactbackground-min.png);
   background-repeat: repeat;
 }
-.donaciones-body .donaciones-content {
+.donaciones .donaciones-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff4ee;
+  width: 700px;
+  padding: 100px 15px;
+}
+.donaciones .donaciones-content .donaciones-type {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-top: 40px;
+}
+.donaciones .donaciones-content .donaciones-type div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fff4ee;
-  padding: 100px 15px;
+  padding: 0 10px;
 }
-.donaciones-body .donaciones-content .donaciones__paymethod {
-  display: grid;
-  grid-template-columns: auto 500px;
-  grid-template-rows: auto;
-  column-gap: 30px;
-  justify-content: center;
-  margin-top: 40px;
-}
-.donaciones-body .donaciones-content .donaciones__paymethod:nth-child(n+3) {
-  margin-top: 70px;
-}
-.donaciones-body .donaciones-content .donaciones__paymethod .donaciones__logocontainer {
+.donaciones .donaciones-content .donaciones-type .donaciones-type-logo {
   height: fit-content;
+  padding: 20px;
+  align-items: center;
 }
-.donaciones-body .donaciones-content .donaciones__paymethod .donaciones__logocontainer .pagos--local {
-  height: 150px;
+.donaciones .donaciones-content .donaciones-type .donaciones-type-logo .type-logo--local {
+  width: 70%;
 }
-.donaciones-body .donaciones-content .donaciones__paymethod .donaciones__logocontainer .pagosLogo {
+.donaciones .donaciones-content .donaciones-type .donaciones-type-logo .type-logo {
   width: 170px;
 }
 
-@media only screen and (max-width: 768px) {
-  .donaciones-body .donaciones-content {
-    display: flex;
-    flex-direction: column;
+@media only screen and (max-width: 540px) {
+  .donaciones-type {
+    width: 300px;
   }
-  .donaciones-body .donaciones-content .donaciones__paymethod {
+}
+@media only screen and (min-width: 541px) and (max-width: 768px) {
+  .donaciones-type {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .donaciones .donaciones-content {
+    width: fit-content;
+  }
+  .donaciones .donaciones-content .donaciones-type {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 10px;
   }
-  .donaciones-body .donaciones-content .donaciones__paymethod:nth-child(n+3) {
+  .donaciones .donaciones-content .donaciones-type:nth-child(n+3) {
     margin-top: 70px;
   }
 }
-/* ------------- INDEX row ------------- */
 .row {
   grid-area: section1;
   background-color: #827161;
@@ -1024,7 +993,6 @@ input, .input-location, .location-select, .form-title, label {
   transform: scale(1.3, 1.3);
 }
 
-/* ------------- BLOG ------------- */
 .blog-container {
   grid-area: section2;
   margin-bottom: 100px;

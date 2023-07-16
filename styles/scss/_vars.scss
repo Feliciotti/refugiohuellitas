@@ -14,7 +14,6 @@ $width: 1200px;
 
 
 // MIXIN ------------------------------------
-
 @mixin center{
     display: flex;
     justify-content: center;
@@ -44,9 +43,18 @@ $width: 1200px;
     }
 }
 
+/* ------------- KEYFRAMES ------------- */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
 
 // MAP ------------------------------------
-
 $btn-colour: (
     first: #fff4db,
     second: #eec6aa,
@@ -69,7 +77,6 @@ $btn-colour: (
         font-size: calc(12em / $i) - 1em;
     }
 }
-
 
 // MEDIA QUERIES ------------------------------------
 
