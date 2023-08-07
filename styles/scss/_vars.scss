@@ -53,6 +53,16 @@ $width: 1200px;
     }
 }
 
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+      }
+    
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 // MAP ------------------------------------
 $btn-colour: (

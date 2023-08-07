@@ -4,14 +4,14 @@
     background-image: url(../contactbackground-min.png);
     background-repeat: repeat;
 
-    .donaciones-content {
+    &__body {
         display: flex;
         flex-direction: column;
         background-color: $light-pink;
         width: 700px;
         padding: 100px 15px;
 
-        .donaciones-type {
+        .donaciones-row {
             display: grid;
             grid-template-columns: 40% 60%;
             margin-top: 40px;
@@ -20,15 +20,15 @@
                 @include column-center;
                 padding: 0 10px;
             }
-            .donaciones-type-logo{
+            .row-logo{
                 height: fit-content;
                 padding: 20px;
                 align-items: center;
 
-                .type-logo--local {
+                .row-logo--local {
                     width: 70%;
                 }
-                .type-logo {
+                .row-logo-img {
                     width: 170px;
                 }
             }
@@ -38,22 +38,22 @@
 
 // MEDIA QUERIES -------------------------
 @media only screen and (max-width: 540px) {
-    .donaciones-type {
+    .donaciones-row {
         width: 300px;
     }
 }
 
 @media only screen and (min-width: 541px) and (max-width: 768px) {
-    .donaciones-type {
+    .donaciones-row {
         width: 500px;
     }
 }
 @media only screen and (max-width: 768px) {
     .donaciones {
-        .donaciones-content {
+        &__body {
             width: fit-content;
     
-            .donaciones-type {
+            .donaciones-row {
                 @include column-center;
                 &:nth-child(n+3) {
                     margin-top: 70px;

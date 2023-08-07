@@ -13,16 +13,9 @@
         margin-top: 50px;
 
         h2{
-            background: radial-gradient(circle, rgba(255,195,246,0.4822303921568627) 0%, rgba(255,195,246,0) 100%);
+            text-shadow: 0 0 3px rgba(255, 255, 255, 0.381), 0 0 5px $light-pink;
         }
     }
-
-    div {
-        h2{
-            text-shadow: 1px 1px 1px $light-pink;
-        }
-    }
-
     .adoption-grid{
         height: 700px;
         width: auto;
@@ -144,10 +137,14 @@
 
 // MEDIAQUERIES ------------------------------
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 360px) {
 
-    #adoptaSection2 {
-        display: none;
+    #adoption-grid--container {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 150px auto;
+        justify-content: center;
+        background-image: url(../contactbackground-min.png);
 
     }
 

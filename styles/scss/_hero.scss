@@ -14,138 +14,73 @@
         align-self: center;
         width: fit-content;
 
-        .hero--title {
+        .hero--title{
             position: absolute;
         }
         .title--transito{
             right: 100px;
         }
         .title--donaciones{
-            left: -200px;
+            left:0px;
             bottom: 270px;
         }
 
-        .hero--img-container{
-            display: grid;
-            grid-template-columns: 70% auto;
-            align-items: center;
-            justify-content: center;
-            .hero--contactoImg1{
-                width: 80%;
-            }
-        }
-        .hero--img {
+        .hero--img{
             width: 100%;
             animation-name: aparecer;
             animation-duration: 1s;
         }
+        .hero--img-container{ // pages/contacto hero only
+            display: grid;
+            grid-template-columns: 50% 50%;
+            column-gap: 150px;
+            align-items: center;
+            justify-content: center;
+        }
     }
-
 }
 
 
 // MEDIA QUERIES -------------------------
+@media only screen and (max-width: 540px) {
+    .hero--img {
+        position: relative;
+        bottom: -50px;
+    }
+}
     
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 900px) {
     .hero-container {
         .hero {
-            .hero-imgContainer{
-                .hero--img {
-                    width: 70%;
-                }
+            @include column-center;
+            padding: 10px;
+
+            .hero--title{
+                position: static;
             }
-            .main--title {
-                top: -30%;
-            }
-            .hero--img {
-                width: 90%;
+            .hero--img-container{ // pages/contacto hero only
+                grid-template-columns: 60% 40%;
+                column-gap: 0;
             }
         }
     }
 }
-
-@media only screen and (min-width: 361px) and (max-width: 540px) {
-
-    .hero-container {
-        .hero {
-            .hero-imgContainer{
-                .hero--img {
-                    width: 70%;
-                }
-            }
-        }
-
-    }
-
-}
-
-@media only screen and (min-width: 541px) and (max-width: 700px) {
-
-    .hero-container {
-        .hero {
-
-            .main--title {
-                top: -20%;
-            }
-
-            .hero--img {
-                width: 60%;
+@media only screen and (min-width: 780px )and (max-width: 1999px) {
+    .hero-container{
+        .hero{
+            .hero--img-container{ // pages/contacto hero only
+                padding: 20px;
+                column-gap: 20px;
             }
         }
     }
 }
-
-@media only screen and (min-width: 701px) and (max-width: 1024px) {
-
-    .hero-container {
-        .hero {
-            .main--title {
-                top: -10%;
-            }
-
-            .hero--img {
-                width: 90%;
-            }
-
-            .main--title {
-                top: -10%;
-            }
-
-            .hero-imgContainer{
-
-                .hero--img {
-                    width: 100%;
-                }
+@media only screen and (min-width: 1200px )and (max-width: 1450px) {
+    .hero-container{
+        .hero{
+            .hero--img-container{ // pages/contacto hero only
+                column-gap: 50px;
             }
         }
     }
 }
-
-// @media only screen and (min-width: 1400px) and (max-width: 1920px){
-
-//     .hero-container {
-//         .mainContainer--nosotros{
-//             .main-img--nosotros {
-//                 width: 100%;
-//             }
-//         }
-
-//         .hero {
-//             .mainTitle--contact {
-//                 position: absolute;
-//                 top: -5%;
-//             }
-//             .hero--img {
-//                 width: 100%;
-//             }
-//             .hero-imgContainer{
-//                 .mainImg--Contact{
-//                     margin-left: 500px;
-//                 }
-//                 .mainImg--cats {
-//                     width: 100%;
-//                 }
-//             }
-//         }
-//     }
-// }

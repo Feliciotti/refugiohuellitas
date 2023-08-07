@@ -54,10 +54,10 @@ header {
                     }
                 }
             }
-            .nav-links {
+            .menu {
                 display: flex;
                 list-style: none;
-                .nav__link{
+                &__link{
                     a {
                         font-family: $title;
                         font-size: 30px;
@@ -87,7 +87,7 @@ header {
         }
     }
 }
-@media only screen and (max-width: 768px) { //NAV BAR
+@media only screen and (max-width: 768px) {
     header {
         padding: 5px 0;
         width: 100vw;
@@ -97,14 +97,14 @@ header {
             box-shadow: none;
         }
         nav {
-            .menu-btn:checked ~ .nav-links {
+            .menu-btn:checked ~ .menu {
                 opacity: 1;
                 clip-path: circle(100% at center);
             }
             .menu-icon {
                 display: block;
             }
-            .nav-links {
+            .menu {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -120,7 +120,7 @@ header {
                     clip-path 1s .2s;
                 clip-path: circle(200px at top right);
     
-                .nav__link{
+                &__link{
                     a {
                         font-family: $title;
                         font-size: 30px;
