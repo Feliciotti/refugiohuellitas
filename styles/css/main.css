@@ -581,12 +581,19 @@ footer .footer__text {
   padding: 100px;
   background-image: url(../contactbackground-min.png);
 }
-.carousel-container .carousel {
-  width: 100em;
-  height: 600px;
-  padding: 10px;
+.carousel-container .carousel, .carousel-container .carousel-title {
   background-color: #ffeadd;
-  border-radius: 50px;
+  box-shadow: 10px 10px 10px rgba(27, 23, 7, 0.253);
+  width: 80vw;
+}
+.carousel-container .carousel-title {
+  border-radius: 50px 50px 0 0;
+  padding-top: 10px;
+}
+.carousel-container .carousel {
+  height: 600px;
+  padding: 0 10px 10px 10px;
+  border-radius: 0 0 50px 50px;
 }
 .carousel-container .carousel-slide-wrapper {
   height: calc(100% - 2em);
@@ -595,6 +602,7 @@ footer .footer__text {
 .carousel-container .carousel-slide-wrapper .carousel-slide {
   transition: 0.5s ease-in-out;
   position: relative;
+  height: 100%;
 }
 .carousel-container .carousel-slide-wrapper .carousel-slide .slide {
   position: absolute;
@@ -602,6 +610,8 @@ footer .footer__text {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: calc(100% - 2em);
+  padding: 30px;
 }
 .carousel-container .carousel-slide-wrapper .carousel-slide .slide-text {
   width: 30%;
@@ -609,6 +619,10 @@ footer .footer__text {
   font-weight: bolder;
   font-size: 40px;
   color: #dd2451;
+}
+.carousel-container .carousel-slide-wrapper .carousel-slide .slide-img {
+  height: 100%;
+  width: auto;
 }
 .carousel-container .carousel_nav {
   text-align: center;
@@ -629,6 +643,39 @@ footer .footer__text {
   background: #d67b60;
 }
 
+@media only screen and (max-width: 769px) {
+  .carousel-container {
+    padding: 20px;
+  }
+  .carousel-container .carousel {
+    height: 80vh;
+  }
+  .carousel-container .carousel-slide-wrapper .carousel-slide {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .carousel-container .carousel-slide-wrapper .carousel-slide .slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .carousel-container .carousel-slide-wrapper .carousel-slide .slide-text {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+  }
+  .carousel-container .carousel-slide-wrapper .carousel-slide .slide-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .carousel-container .carousel_nav span {
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+  }
+}
 .input-location, .location-select, .form-title {
   color: #827161;
   text-align: center;

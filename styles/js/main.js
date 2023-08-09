@@ -1,14 +1,5 @@
 const header = document.querySelector('.header');
 
-const slideShow = document.querySelector('.carousel-slide'),
-        slides = Array.from(slideShow.children),
-        slideWidth = slides[0].getBoundingClientRect().width, //returns the width size of the first slide
-
-        dotsNav = document.querySelector('.carousel_nav'),
-        dots = Array.from(dotsNav.children);
-
-
-//------ responsive nav function
 window.addEventListener('scroll', () =>{
     const scrollPos = window.scrollY;
     if(scrollPos > 10){
@@ -20,7 +11,14 @@ window.addEventListener('scroll', () =>{
 
 
 //------------ adopciones - carousel
-slides.forEach((slide, index) =>{ // sets the slides one next to each other
+const slideShow = document.querySelector('.carousel-slide'),
+        slides = Array.from(slideShow.children),
+        slideWidth = slides[0].getBoundingClientRect().width, //returns the width size of the first slide
+
+        dotsNav = document.querySelector('.carousel_nav'),
+        dots = Array.from(dotsNav.children);
+
+slides.forEach((slide, index) =>{ // sets the slides one next to another
     slide.style.left = slideWidth * index + 'px';
 })
 
@@ -28,8 +26,6 @@ const moveToSlide = (activeSlide, targetSlide) =>{
     slideShow.style.transform = `translateX(-${targetSlide.style.left})`
     activeSlide.classList.remove('carousel-slide--active')
     targetSlide.classList.add('carousel-slide--active')
-
-    console.log(activeSlide);
 }
 
 dotsNav.addEventListener('click', e =>{
