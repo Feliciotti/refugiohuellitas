@@ -1,6 +1,6 @@
 .donaciones {
     grid-area: section1;
-    @include flex-jc-center;
+    @include flex-justify-center;
     background-image: url(../contactbackground-min.png);
     background-repeat: repeat;
 

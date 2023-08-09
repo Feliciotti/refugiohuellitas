@@ -24,7 +24,7 @@
 
                 .slide{
                     position: absolute;
-                    @include flex-jc-center;
+                    @include flex-justify-center;
                     align-items: center;
                     width: 100%;
                     

@@ -9,7 +9,7 @@
     height: auto;
 
     .row-imgContainer {
-        @include flex-jc-center;
+        @include flex-justify-center;
         align-items: center;
 
         .row-img {
@@ -88,7 +88,7 @@
 @media only screen and (max-width: 360px) {
     .row {
         background-color: $pink;
-        @include flex-jc-center;
+        @include flex-justify-center;
         flex-direction: column;
     
         .row-imgContainer {
@@ -129,7 +129,7 @@
 @media only screen and (min-width: 361px) and (max-width: 540px) {
     .row {
         background-color: $pink;
-        @include flex-jc-center;
+        @include flex-justify-center;
         flex-direction: column;
 
         .row-imgContainer {
@@ -166,7 +166,7 @@
 @media only screen and (min-width: 576px) and (max-width: 768px) {
     .row {
         background-color: $pink;
-        @include flex-jc-center;
+        @include flex-justify-center;
         flex-direction: column;
 
         .row-imgContainer {
