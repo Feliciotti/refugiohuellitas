@@ -4,7 +4,7 @@
 }
 #contactForm-container {
     grid-area: section1;
-    @include center;
+    @include flex-jc-center;
     background-image: url(../contactbackground-min.png);
     background-repeat: repeat;
 
@@ -12,7 +12,7 @@
         background-color: rgb(255, 255, 255);
         border: 10px groove $red;
         color: $brown;
-        @include column-center;
+        @include flex-col-al-jus-center;
         margin-top: 100px;
         margin-bottom: 100px;
         width: 550px;
@@ -23,7 +23,7 @@
             padding-bottom: 20px;
 
             .inputs-userdata{
-                @include column-center;
+                @include flex-col-al-jus-center;
                 margin-bottom: 20px;
 
                 input, .input-location, .location-select{
@@ -75,7 +75,7 @@
         }
 
         .form-bttncontainer{
-            @include center;
+            @include flex-jc-center;
 
             .form-bttn {
                 @include btn;

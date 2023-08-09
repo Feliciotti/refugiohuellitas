@@ -100,91 +100,46 @@
             </article>
         </section>
 
-        <section id="adoption-grid--container">
-            <div class="adopciones-title adopciones-title--grid">
-                <h2>¿A quién adoptar?</h2>
-            </div>
-            <!--TABLA GUÍA-->
-            <div>
-                <table class="adoption-grid" cellspacing="0" cellpadding="5px">
-                    <thead>
-                        <th>Característica</th>
-                        <th>Cachorros</th>
-                        <th>Adultos</th>
-                        <th>Ancianos</th>
-                    </thead>
-                    <tr>
-                        <td class="grid-firstVerticalRow">Dependencia</td>
-                        <td>Alto nivel de dependecia.</td>
-                        <td>Intermedio.</td>
-                        <td>Bajo nivel de dependencia.</td>
-                    </tr>
-                    <tr>
-                        <td class="grid-firstVerticalRow">Comportamiento/ <br> Carácter</td>
-                        <td>A desarrollar.<br> Pueden ser muy destructivos del ambiente y/o pertenencias personales.</td>
-                        <td>Variable, si bien se pueden saber rasgos de su personalidad pueden ser capaces de adaptarse a un nuevo ambiente (sin cambiar del todo).</td>
-                        <td>Totalmente definido. El adoptante debe ser capaz de respetar sus hábitos.</td>
-                    </tr>
-                    <tr>
-                        <td class="grid-firstVerticalRow">Actividad</td>
-                        <td>Muy hiperactivos, necesitan mucho del juego.</td>
-                        <td>Intermedio.</td>
-                        <td>Poco activos, son los que más tiempo pasan durmiendo.</td>
-                    </tr>
-                    <tr>
-                        <td class="grid-firstVerticalRow">Castración</td>
-                        <td>Generalmente la castración queda a compromiso del adoptante.</td>
-                        <td>Generalmente ya castrados.</td>
-                        <td>Castrados.</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-
-        <section class="carrusel-container" id="carrusel_container">
-            <div class="carrusel-title">
+        <section class="carousel-container">
+    
+            <div class="carousel-title">
                 <h2>Testimonios de adoptantes</h2>
             </div>
-            <div class="carrusel">
-                <div class="carrusel-banner" id="banner">
-        
-                    <!-- Use la imagen como imagen de fondo, pero también como hipervínculo-->
-                    <a href="">
-                        <div class="banner-slide slide1 slide-active">
-                            <p class="banner__text">
+            
+            <div class="carousel">
+                <div class="carousel-slide-wrapper">
+                    <ul class="carousel-slide">
+                        <li class="slide carousel-slide--active">
+                            <p class="slide-text">
                                 "Es el gato más gordo que he visto" <br>
                                 -Fernanda
                             </p>
-                        </div>
-                        <!-- Qué div es actual, agregue slide-active a cual-->
-                    </a>
-                    <a href="">
-                        <div class="banner-slide slide2">
-                            <p class="banner__text">
+                            <img class="slide-img" src="../img/test1.png" alt="Foto del adoptante">
+                        </li>
+                        <li class="slide">
+                            <p class="slide-text">
                                 "Adopté a Luli, me sigue a todos lados.
                                 A la noche duerme en mi cama, con mi otro gato.
                                 Me levanto toda contracturada... no me arrepiento" <br>
-                                 -Cynthia.
+                                    -Cynthia.
                             </p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="banner-slide slide3">
-                            <p class="banner__text">
+                            <img class="slide-img" src="../img/test2.png" alt="Foto del adoptante">
+                        </li>
+                        <li class="slide">
+                            <p class="slide-text">
                                 "Adopté a Chipi, se enfermó y gasté mis ahorros en veterinario.
                                 Siempre que llego al departamento me recibe, abro la puerta y está
                                 ahí detrás. <br>
                                 Es linda." <br>
-                                 -Aimon.
+                                    -Aimon.
                             </p>
-                        </div>
-                    </a>
-                    <!-- Sobrescribir después de escribir-->
+                            <img class="slide-img" src="../img/test3.png" alt="Foto del adoptante">
+                        </li>
+                    </ul>
                 </div>
-    
-                <!-- Navegación de puntos, haga clic para cambiar de imagen-->
-                <div class="dots" id="dots">
-                    <span class="active"></span>
+
+                <div class="carousel_nav">
+                    <span class="carusel-dot--active"></span>
                     <span></span>
                     <span></span>
                 </div>

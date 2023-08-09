@@ -1,6 +1,6 @@
 .donaciones {
     grid-area: section1;
-    @include center;
+    @include flex-jc-center;
     background-image: url(../contactbackground-min.png);
     background-repeat: repeat;
 
@@ -17,7 +17,7 @@
             margin-top: 40px;
 
             div{
-                @include column-center;
+                @include flex-col-al-jus-center;
                 padding: 0 10px;
             }
             .row-logo{
@@ -54,7 +54,7 @@
             width: fit-content;
     
             .donaciones-row {
-                @include column-center;
+                @include flex-col-al-jus-center;
                 &:nth-child(n+3) {
                     margin-top: 70px;
                 } 

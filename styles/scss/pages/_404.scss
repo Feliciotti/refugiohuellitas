@@ -1,5 +1,5 @@
     .e404 {
-        @include column-center;
+        @include flex-col-al-jus-center;
         height: 100vh;
         position: relative;
         animation-name: aparecer;
@@ -29,7 +29,7 @@
                 right: 30%;
 
                 .img404-btn {
-                    @include column-center;
+                    @include flex-col-al-jus-center;
 
                     .btn404 {
                         font-size: 50px;
@@ -43,7 +43,7 @@
                     }
                     .btn404--lana{
                         transition: 2s;
-                        animation: rotar 2s;
+                        animation: slideInLeft 1.5s ease-in-out;
                         width: 120%;
                     }
                     &:hover .btn404{

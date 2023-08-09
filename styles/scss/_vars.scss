@@ -14,12 +14,12 @@ $width: 1200px;
 
 
 // MIXIN ------------------------------------
-@mixin center{
+@mixin flex-justify-center{
     display: flex;
     justify-content: center;
 } 
 
-@mixin column-center{
+@mixin flex-col-al-jus-center{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,16 +53,14 @@ $width: 1200px;
     }
 }
 
-@keyframes rotar {
-    from {
-        transform: rotate(0deg);
-      }
-    
-    to {
-        transform: rotate(360deg);
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-100px) rotate(0deg);
+    }
+    to{
+        transform: translateX(0) rotate(360deg);
     }
 }
-
 
 // MAP ------------------------------------
 $btn-colour: (

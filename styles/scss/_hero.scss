@@ -1,7 +1,7 @@
 /* ------------- BANNER ------------- */
 .hero-container {
     grid-area: main;
-    @include center;
+    @include flex-jc-center;
     height: 100vh;
     background-image: url(../indexbackground-min.png);
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 
     .hero {
         position: absolute;
-        @include center;
+        @include flex-jc-center;
         align-self: center;
         width: fit-content;
 
@@ -52,7 +52,7 @@
 @media only screen and (max-width: 900px) {
     .hero-container {
         .hero {
-            @include column-center;
+            @include flex-col-al-jus-center;
             padding: 10px;
 
             .hero--title{
