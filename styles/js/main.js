@@ -13,12 +13,12 @@ window.addEventListener('scroll', () =>{
 //------------ adopciones - carousel
 const slideShow = document.querySelector('.carousel-slide'),
         slides = Array.from(slideShow.children),
-        slideWidth = slides[0].getBoundingClientRect().width, //returns the width size of the first slide
+        slideWidth = slides[0].getBoundingClientRect().width,
 
         dotsNav = document.querySelector('.carousel_nav'),
         dots = Array.from(dotsNav.children);
 
-slides.forEach((slide, index) =>{ // sets the slides one next to another
+slides.forEach((slide, index) =>{ // sets the slides position one next to each other
     slide.style.left = slideWidth * index + 'px';
 })
 
