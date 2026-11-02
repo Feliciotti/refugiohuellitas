@@ -391,6 +391,7 @@ header.scrolled {
 /* ------------- FOOTER ------------- */
 footer {
   grid-area: footer;
+  width: 100%;
   background-color: #827161;
   color: #fff4ee;
   font-family: "Zen Loop", cursive;
@@ -438,6 +439,9 @@ footer .footer__text {
 }
 
 @media only screen and (max-width: 578px) {
+  footer {
+    width: 100%;
+  }
   footer .footer__ulContainer {
     display: flex;
     justify-content: center;
