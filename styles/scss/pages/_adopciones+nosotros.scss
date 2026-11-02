@@ -1,5 +1,7 @@
+@use "../vars" as *;
+
 // adopciones + nosotros
-.info{
+.info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,57 +15,62 @@
         justify-content: center;
         height: fit-content;
 
-        div{
+        div {
             height: fit-content;
         }
+
         .article-imgContainer {
             .article-img {
                 width: 100%;
-            }  
+            }
         }
     }
 }
 
 // adopciones carousel
-.adopciones-title{
+.adopciones-title {
     margin-top: 50px;
 }
 
-.carousel-container{
+.carousel-container {
     @include flex-col-al-jus-center;
     padding: 100px;
     background-image: url(../contactbackground-min.png);
 
-    .carousel, .carousel-title{
+    .carousel,
+    .carousel-title {
         background-color: #ffeadd;
         box-shadow: 10px 10px 10px rgba(27, 23, 7, 0.253);
         width: 80vw;
     }
-    .carousel-title{
+
+    .carousel-title {
         border-radius: 50px 50px 0 0;
         padding-top: 10px;
     }
 }
-.carousel{
+
+.carousel {
     height: 600px;
     padding: 0 10px 10px 10px;
     border-radius: 0 0 50px 50px;
 
-    &-slide-wrapper{
+    &-slide-wrapper {
         height: calc(100% - 2em); //100% - nav height
         overflow: hidden;
 
-        .carousel-slide{
+        .carousel-slide {
             transition: 0.5s ease-in-out;
             position: relative;
             height: 100%;
         }
     }
-    &_nav{
+
+    &_nav {
         text-align: center;
         height: 2em;
 
-        span{
+        span {
             display: inline-block;
             width: 20px;
             height: 20px;
@@ -73,21 +80,22 @@
             box-shadow: 0 0 0 2px #ffcd74 inset;
             cursor: pointer;
         }
-        .carusel-dot--active{
+
+        .carusel-dot--active {
             box-shadow: 0 0 0 2px rgba(27, 23, 7, 0.253) inset;
             background: #d67b60;
         }
     }
 }
 
-.slide{
+.slide {
     position: absolute;
     @include flex-justify-center;
     align-items: center;
     width: 100%;
     height: calc(100% - 2em);
     padding: 30px;
-    
+
     &-text {
         width: 30%;
         font-family: $title;
@@ -95,7 +103,8 @@
         font-size: 40px;
         color: $red;
     }
-    &-img{
+
+    &-img {
         height: 100%;
         width: auto;
     }
@@ -106,41 +115,45 @@
 
 // MEDIAQUERIES ------------------------------
 @media only screen and (max-width: 769px) {
-    .info{
+    .info {
         .info-article {
             display: flex;
             align-items: center;
             flex-direction: column;
             padding: 0 20px;
-    
+
             margin: 50px 0;
             grid-row-gap: 20px;
         }
-    
-        .info-article--2{
+
+        .info-article--2 {
             flex-direction: column-reverse;
         }
     }
-    .carousel-container{
+
+    .carousel-container {
         padding: 20px;
-        .carousel{
+
+        .carousel {
             height: 80vh;
 
-            &-slide-wrapper{
-                .carousel-slide{
+            &-slide-wrapper {
+                .carousel-slide {
                     height: 100%;
                     display: flex;
                     align-items: center;
 
-                    .slide{
+                    .slide {
                         @include flex-justify-center;
                         flex-direction: column-reverse;
-                        &-text{
+
+                        &-text {
                             font-size: 1.5em;
                             width: 100%;
                             text-align: center;
                         }
-                        &-img{
+
+                        &-img {
                             width: 90%;
                             height: auto;
                             margin-bottom: 50px;
@@ -148,8 +161,9 @@
                     }
                 }
             }
-            &_nav{
-                span{
+
+            &_nav {
+                span {
                     width: 15px;
                     height: 15px;
                     margin: 10px;
@@ -160,24 +174,25 @@
 }
 
 @media only screen and (min-width: 770px) and (max-width: 1024px) {
-    .info{
-        .info-article{
+    .info {
+        .info-article {
             grid-template-columns: 300px 400px;
             grid-column-gap: 0px;
         }
     }
 
-    .slide-text{
+    .slide-text {
         font-size: 2em;
     }
-    .slide-img{
+
+    .slide-img {
         width: 50%;
         height: auto;
     }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1500px){
-    .info{
+@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+    .info {
         .info-article {
             grid-template-columns: 400px 500px;
             grid-column-gap: 50px;

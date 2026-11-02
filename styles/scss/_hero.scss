@@ -1,3 +1,5 @@
+@use "vars" as *;
+
 /* ------------- BANNER ------------- */
 .hero-container {
     grid-area: main;
@@ -14,23 +16,27 @@
         align-self: center;
         width: fit-content;
 
-        .hero--title{
+        .hero--title {
             position: absolute;
         }
-        .title--transito{
+
+        .title--transito {
             right: 100px;
         }
-        .title--donaciones{
-            left:0px;
+
+        .title--donaciones {
+            left: 0px;
             bottom: 270px;
         }
 
-        .hero--img{
-            width: 100%;
+        .hero--img {
+            width: 75%;
             animation-name: aparecer;
             animation-duration: 1s;
         }
-        .hero--img-container{ // pages/contacto hero only
+
+        .hero--img-container {
+            // pages/contacto hero only
             display: grid;
             grid-template-columns: 50% 50%;
             column-gap: 150px;
@@ -48,37 +54,43 @@
         bottom: -50px;
     }
 }
-    
+
 @media only screen and (max-width: 900px) {
     .hero-container {
         .hero {
             @include flex-col-al-jus-center;
             padding: 10px;
 
-            .hero--title{
+            .hero--title {
                 position: static;
             }
-            .hero--img-container{ // pages/contacto hero only
+
+            .hero--img-container {
+                // pages/contacto hero only
                 grid-template-columns: 60% 40%;
                 column-gap: 0;
             }
         }
     }
 }
-@media only screen and (min-width: 780px )and (max-width: 1999px) {
-    .hero-container{
-        .hero{
-            .hero--img-container{ // pages/contacto hero only
+
+@media only screen and (min-width: 780px)and (max-width: 1999px) {
+    .hero-container {
+        .hero {
+            .hero--img-container {
+                // pages/contacto hero only
                 padding: 20px;
                 column-gap: 20px;
             }
         }
     }
 }
-@media only screen and (min-width: 1200px )and (max-width: 1450px) {
-    .hero-container{
-        .hero{
-            .hero--img-container{ // pages/contacto hero only
+
+@media only screen and (min-width: 1200px)and (max-width: 1450px) {
+    .hero-container {
+        .hero {
+            .hero--img-container {
+                // pages/contacto hero only
                 column-gap: 50px;
             }
         }

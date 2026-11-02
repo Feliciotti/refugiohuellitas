@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 .donaciones {
     grid-area: section1;
     @include flex-justify-center;
@@ -16,11 +18,12 @@
             grid-template-columns: 40% 60%;
             margin-top: 40px;
 
-            div{
+            div {
                 @include flex-col-al-jus-center;
                 padding: 0 10px;
             }
-            .row-logo{
+
+            .row-logo {
                 height: fit-content;
                 padding: 20px;
                 align-items: center;
@@ -28,6 +31,7 @@
                 .row-logo--local {
                     width: 70%;
                 }
+
                 .row-logo-img {
                     width: 170px;
                 }
@@ -48,16 +52,18 @@
         width: 500px;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .donaciones {
         &__body {
             width: fit-content;
-    
+
             .donaciones-row {
                 @include flex-col-al-jus-center;
+
                 &:nth-child(n+3) {
                     margin-top: 70px;
-                } 
+                }
             }
         }
     }

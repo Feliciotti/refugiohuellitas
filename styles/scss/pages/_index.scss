@@ -1,6 +1,5 @@
-@import "404";
-@import "adopciones+nosotros";
-@import "contacto";
-@import "donaciones";
-
-@import "home";
+@use "404" as *;
+@use "adopciones+nosotros" as *;
+@use "contacto" as *;
+@use "donaciones" as *;
+@use "home" as *;

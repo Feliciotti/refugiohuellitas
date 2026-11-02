@@ -117,7 +117,10 @@ h4 {
   }
 }
 /* ------------- ESTILOS GENERALES ------------- */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Zen Loop", cursive;
   color: #dd2451;
   font-weight: bold;
@@ -340,7 +343,7 @@ header.scrolled {
   bottom: 270px;
 }
 .hero-container .hero .hero--img {
-  width: 100%;
+  width: 75%;
   animation-name: aparecer;
   animation-duration: 1s;
 }
@@ -602,7 +605,8 @@ footer .footer__text {
   padding: 100px;
   background-image: url(../contactbackground-min.png);
 }
-.carousel-container .carousel, .carousel-container .carousel-title {
+.carousel-container .carousel,
+.carousel-container .carousel-title {
   background-color: #ffeadd;
   box-shadow: 10px 10px 10px rgba(27, 23, 7, 0.253);
   width: 80vw;
@@ -729,7 +733,9 @@ footer .footer__text {
     grid-column-gap: 50px;
   }
 }
-.input-location, .location-select, .form-title {
+.input-location,
+.location-select,
+.form-title {
   color: #827161;
   text-align: center;
 }
@@ -765,7 +771,9 @@ footer .footer__text {
   flex-direction: column;
   margin-bottom: 20px;
 }
-#contactForm-container #form .form-inputsContainer .inputs-userdata input, #contactForm-container #form .form-inputsContainer .inputs-userdata .input-location, #contactForm-container #form .form-inputsContainer .inputs-userdata .location-select {
+#contactForm-container #form .form-inputsContainer .inputs-userdata input,
+#contactForm-container #form .form-inputsContainer .inputs-userdata .input-location,
+#contactForm-container #form .form-inputsContainer .inputs-userdata .location-select {
   font-family: "Zen Loop", cursive;
   font-size: 200%;
 }
@@ -776,7 +784,8 @@ footer .footer__text {
   border-bottom: 2px solid #827161;
   text-align: center;
 }
-#contactForm-container #form .form-inputsContainer .inputs-userdata .input-location, #contactForm-container #form .form-inputsContainer .inputs-userdata .location-select {
+#contactForm-container #form .form-inputsContainer .inputs-userdata .input-location,
+#contactForm-container #form .form-inputsContainer .inputs-userdata .location-select {
   font-weight: bold;
 }
 #contactForm-container #form .form-inputsContainer .inputs-userdata .location-select {
@@ -823,13 +832,15 @@ footer .footer__text {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+#contactForm-container #form .form-bttncontainer .form-bttn:hover {
+  color: #dd2451;
+}
+#contactForm-container #form .form-bttncontainer .form-bttn {
   font-family: "Zen Loop", cursive;
   color: #827161;
   font-size: 25px;
   font-weight: bold;
-}
-#contactForm-container #form .form-bttncontainer .form-bttn:hover {
-  color: #dd2451;
 }
 #contactForm-container #form .form-bttncontainer .form-bttn:first-child {
   margin-right: 20px;

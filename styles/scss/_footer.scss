@@ -1,3 +1,5 @@
+@use "vars" as *;
+
 /* ------------- FOOTER ------------- */
 footer {
     grid-area: footer;
@@ -13,10 +15,10 @@ footer {
         justify-content: space-between;
         padding: 30px 60px;
 
-        .footer__list{
+        .footer__list {
             list-style: none;
 
-            li{
+            li {
                 margin-bottom: 15px;
 
                 &:first-of-type {
@@ -29,10 +31,10 @@ footer {
         }
 
         .socialMedia {
-            
+
             li {
 
-                .footer__icon{
+                .footer__icon {
                     color: $light-pink;
 
                     i {
@@ -41,7 +43,7 @@ footer {
                         &:hover {
                             color: #d67b60;
                         }
-    
+
                     }
 
                 }
@@ -82,7 +84,7 @@ footer {
             align-items: center;
             padding: 10px 0;
 
-            .footer__list{
+            .footer__list {
                 padding: 0;
                 text-align: center;
                 margin-top: 40px;
@@ -90,18 +92,18 @@ footer {
 
             .socialMedia {
                 margin-top: 40px;
-                
+
                 li {
 
-                    .footer__icon{
+                    .footer__icon {
 
                         i {
                             font-size: 35px;
-                            
+
                             &:nth-child(-n+2) {
                                 margin-left: 10px;
-                                }
-        
+                            }
+
                         }
 
                     }

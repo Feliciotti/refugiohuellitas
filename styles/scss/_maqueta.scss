@@ -1,3 +1,5 @@
+@use "vars" as *;
+
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +9,10 @@
 .body {
     background-color: $light-pink;
     grid-template-areas: "header"
-                        "main"
-                        "section1"
-                        "section2"
-                        "footer";
+        "main"
+        "section1"
+        "section2"
+        "footer";
     grid-template-columns: auto;
     grid-template-rows: 100px auto auto auto auto;
     justify-items: center;
@@ -28,10 +30,10 @@
 
     body {
         grid-template-areas: "header"
-                            "main"
-                            "section1"
-                            "section2"
-                            "footer";
+            "main"
+            "section1"
+            "section2"
+            "footer";
         grid-template-columns: auto;
         grid-template-rows: 70px 100vh auto auto auto;
     }
@@ -46,10 +48,10 @@
 
     body {
         grid-template-areas: "header"
-                            "main"
-                            "section1"
-                            "section2"
-                            "footer";
+            "main"
+            "section1"
+            "section2"
+            "footer";
         grid-template-columns: auto;
         grid-template-rows: 70px 100vh auto auto 30px;
     }
@@ -63,10 +65,10 @@
 
     body {
         grid-template-areas: "header"
-                            "main"
-                            "section1"
-                            "section2"
-                            "footer";
+            "main"
+            "section1"
+            "section2"
+            "footer";
         grid-template-columns: auto;
         grid-template-rows: 100px 100vh auto auto auto;
     }

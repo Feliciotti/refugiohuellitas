@@ -1,67 +1,75 @@
-    .e404 {
-        @include flex-col-al-jus-center;
-        height: 100vh;
-        position: relative;
-        animation-name: aparecer;
-        animation-duration: 1s;
+@use "../vars" as *;
+@use "../maqueta";
 
-        .e404_titles {
-            .e404-title {
-                font-size: 100px;
-            }
-            .e404-title2 {
-                font-size: 40px;
-                word-spacing: 3px;
-            }
+.e404 {
+    @include flex-col-al-jus-center;
+    height: 100vh;
+    position: relative;
+    animation-name: aparecer;
+    animation-duration: 1s;
+
+    .e404_titles {
+        .e404-title {
+            font-size: 100px;
         }
 
-        .img404-container {
-            position: relative;
+        .e404-title2 {
+            font-size: 40px;
+            word-spacing: 3px;
+        }
+    }
+
+    .img404-container {
+        position: relative;
+        height: 400px;
+
+        .img404 {
             height: 400px;
+        }
 
-            .img404 {
-                height: 400px;
-            }
-        
-            .img404-btnContainer{
-                position: absolute;
-                bottom: -5%;
-                right: 30%;
+        .img404-btnContainer {
+            position: absolute;
+            bottom: -5%;
+            right: 30%;
 
-                .img404-btn {
-                    @include flex-col-al-jus-center;
+            .img404-btn {
+                @include flex-col-al-jus-center;
 
-                    .btn404 {
-                        font-size: 50px;
-                        position: absolute;
-                        color: $light-pink;
-                        text-shadow: 0 0px 5px black;
-                    }
-                    &:hover .btn404--lana{
-                        transition: 2s;
-                        transform: rotateZ(360deg);
-                    }
-                    .btn404--lana{
-                        transition: 2s;
-                        animation: slideInLeft 1.5s ease-in-out;
-                        width: 120%;
-                    }
-                    &:hover .btn404{
-                        color: $red;
-                    }
+                .btn404 {
+                    font-size: 50px;
+                    position: absolute;
+                    color: $light-pink;
+                    text-shadow: 0 0px 5px black;
+                }
+
+                &:hover .btn404--lana {
+                    transition: 2s;
+                    transform: rotateZ(360deg);
+                }
+
+                .btn404--lana {
+                    transition: 2s;
+                    animation: slideInLeft 1.5s ease-in-out;
+                    width: 120%;
+                }
+
+                &:hover .btn404 {
+                    color: $red;
                 }
             }
         }
     }
+}
 
 
 // MEDIA QUERIES -------------------------
 @media only screen and (max-width: 360px) {
-    .e404{
+    .e404 {
         .error404_titles {
             .error404-title {
                 font-size: 50px;
             }
+
             .error404-title2 {
                 font-size: 30px;
             }
@@ -75,13 +83,15 @@
                 margin-top: 50px;
                 height: 170px;
             }
+
             .img404-btnContainer {
 
-                .img404-btn{
-                    .btn404--lana{
+                .img404-btn {
+                    .btn404--lana {
                         width: 70%;
                     }
-                    .btn404{
+
+                    .btn404 {
                         font-size: 250%;
                     }
                 }
@@ -91,31 +101,34 @@
 }
 
 @media only screen and (min-width: 361px) and (max-width: 540px) {
-    .e404{
+    .e404 {
         .e404_titles {
             .e404-title {
                 font-size: 60px;
             }
+
             .e404-title2 {
                 font-size: 40px;
             }
         }
 
-        .img404-container{
+        .img404-container {
             width: 360px;
             height: auto;
 
-            .img404{
+            .img404 {
                 margin-top: 50px;
                 height: 190px;
                 width: auto;
             }
-            .img404-btnContainer{
-                .img404-btn{
-                    .btn404--lana{
+
+            .img404-btnContainer {
+                .img404-btn {
+                    .btn404--lana {
                         width: 75%;
                     }
-                    .btn404{
+
+                    .btn404 {
                         font-size: 200%;
                     }
                 }
@@ -125,14 +138,16 @@
 }
 
 @media only screen and (min-width: 541px) and (max-width: 769px) {
-    .e404{
-        .img404-container{
+    .e404 {
+        .img404-container {
             width: 540px;
             height: auto;
-            .img404{
+
+            .img404 {
                 margin-top: 50px;
                 height: 287px;
             }
+
             .img404-btnContainer {
                 right: 20%;
             }

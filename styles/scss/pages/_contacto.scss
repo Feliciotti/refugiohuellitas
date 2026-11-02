@@ -1,7 +1,12 @@
-.input-location, .location-select, .form-title{
+@use "../vars" as *;
+
+.input-location,
+.location-select,
+.form-title {
     color: $brown;
     text-align: center;
 }
+
 #contactForm-container {
     grid-area: section1;
     @include flex-justify-center;
@@ -22,25 +27,31 @@
         .form-inputsContainer {
             padding-bottom: 20px;
 
-            .inputs-userdata{
+            .inputs-userdata {
                 @include flex-col-al-jus-center;
                 margin-bottom: 20px;
 
-                input, .input-location, .location-select{
+                input,
+                .input-location,
+                .location-select {
                     font-family: $title;
                     font-size: 200%;
                 }
-                input{
+
+                input {
                     margin-bottom: 20px;
                     width: 300px;
                     border: none;
                     border-bottom: 2px solid $brown;
                     text-align: center;
                 }
-                .input-location, .location-select{
+
+                .input-location,
+                .location-select {
                     font-weight: bold;
                 }
-                .location-select{
+
+                .location-select {
                     border: none;
                     border-radius: 5px;
                     padding: 5px 15px;
@@ -48,7 +59,7 @@
                     overflow: hidden;
                     outline: 0;
                     background: $pink;
-    
+
                     font-size: 25px;
                     cursor: pointer;
                 }
@@ -60,11 +71,13 @@
                 font-weight: bold;
                 margin: 0;
             }
-            label{
+
+            label {
                 font-family: $text;
                 font-size: 20px;
                 text-align: center;
             }
+
             textarea {
                 border: groove 5px $red;
                 width: 250px;
@@ -74,7 +87,7 @@
             }
         }
 
-        .form-bttncontainer{
+        .form-bttncontainer {
             @include flex-justify-center;
 
             .form-bttn {
@@ -106,11 +119,12 @@
             border: 7px groove $red;
             width: 300px;
 
-            .form-inputsContainer{
-                .inputs-userdata input{
+            .form-inputsContainer {
+                .inputs-userdata input {
                     width: 200px;
                     font-size: 150%;
                 }
+
                 textarea {
                     width: 220px;
                 }
@@ -132,6 +146,7 @@
                     padding: 10px;
                 }
             }
+
             .form__btncontainer {
                 .btn--form {
                     font-size: 20px;
@@ -146,12 +161,14 @@
     #contactForm-container {
         #form {
             padding: 30px 40px;
+
             .form__container {
                 textarea {
                     width: 250px;
                     padding: 10px;
                 }
             }
+
             .form__btncontainer {
                 .btn--form {
                     font-size: 30px;

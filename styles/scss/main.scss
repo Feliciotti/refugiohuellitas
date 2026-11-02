@@ -1,12 +1,12 @@
-@import "vars";
+@use "vars" as *;
 
 
-@import "maqueta";
-@import "fonts";
-@import "header";
-@import "hero";
+@use "maqueta";
+@use "fonts";
+@use "header";
+@use "hero";
 
-@import "footer";
+@use "footer";
 
 // INDEX
-@import "pages";
+@use "pages";
